@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import i18n from "../scripts/i18n";
 
+import logo from '../assets/img/logos/logo.png';
 import sponsor1 from '../assets/img/sponsors/sponsor1.png';
 import sponsor2 from '../assets/img/sponsors/sponsor2.png';
 import sponsor3 from '../assets/img/sponsors/sponsor3.png';
@@ -31,7 +32,7 @@ function Footer() {
 				<div className="box-footer">
 					<div className="container">
 						<div className="content-footer">
-							<img src="../src/assets/img/logos/logo.png" />
+							<img src={logo} />
 							<div className="social-footer">
 								<ul className="social-menu">
 									<li className="social-menu-item">

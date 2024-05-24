@@ -141,7 +141,7 @@ export const kk = {
 			klaud: {
 				first: "Batyr",
 				last: "Kussain",
-				inst: "Batyr",
+				inst: "Batyrğa",
 				gen: "Klaud'nyŋ",
 				story: "<p>Barlyğy 2003 jyldan bastaldy. Batyr 4 jasta bolğan kezde, äkesi ony oiynmen tanystyrdy, ol qazirdiŋ özinde beine oiyndar tarihyndağy eŋ jaqsy atqyş retinde tanyldy. Klaud CS-men üide otyryp kezdesti. Sol kezde bolaşaq qazaq mergeni etik atudy üirendi.</p><p>Jyldar öttı, Klaud tynyştalmady, sondyqtan 7 jasynda Klaud oiynnyŋ jaŋa nūsqasyna köştı - CS:Source. Jaŋa qozğaltqyş, fizika jäne grafika qazaqty şatastyrdy, bıraq ol beiımdele aldy.</p><p>Bırneşe jyldan keiın, 12 jasynda, 2011 jyly, sol kezde «Kl4udL0l1ch» atanğan jas qazaq, jergılıktı Almaty kompiuterlık klubynda kışıgırım turnirlerdıŋ tek CS: S emes, sonymen qatar CS 1.6-da bırneşe dürkın şempiony boldy, Warcraft 3, Quake 3 jäne Unreal Tournament siiaqty basqa oiyndar. Ol kezde Klaudyŋ komandasy bolmady - ol bırneşe dostary men synyptastarynan tūratyn qarapaiym mikste oinady.</p><p>Jas AWP öz aimağynda tanymaldylyqqa ie boldy jäne onyŋ Almaty KS jūldyzyna ainaluy ekıtalai, öitkenı köşetın uaqyt keldı. 14 jasynda Klaýd Qazaqstannyŋ şekarasynan tysqary jerge köşıp kettı, ol arqyly kompiuterlık klubtardan şyğyp, oqudy bastau kerek boldy. Bıraq olai bolğan joq - CS:GO qazaqstandyq studenttermen bäsekege tüstı, būl CS-nıŋ jaŋa Source qozğaltqyşyndağy jaŋa nūsqasy.</p><p>Däl solai, Klaud Galilden bastap Tec-9 nerfterıne deiın 4 jyl boiy jaŋa bölımnıŋ barlyq bölşekterın oqyp, pro-sahnany jäne oiyndağy özgerısterdı baiqady. Klaud CS-dı üirenıp ülgerdı jäne <3></3> <strong>HOWL</strong> komandasyn osy TMD qūramasynyŋ kapitany retınde basqara otyryp, Klaud elektrondy sport sahnasyna enuge tyrysady.</p>"
 			},

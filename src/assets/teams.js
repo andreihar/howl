@@ -1,24 +1,5 @@
-import i18n from 'i18next';
-import by from '../assets/img/flags/by.png';
-import kz from '../assets/img/flags/kz.png';
-import ru from '../assets/img/flags/ru.png';
-import cis from '../assets/img/flags/cis.png';
-import ua from '../assets/img/flags/ua.png';
-
 import north from '../assets/img/logos/north.svg';
 import ldlc from '../assets/img/logos/ldlc.svg';
-
-const flags = { by, kz, ru, cis, ua };
-
-export function getStoryWithFlags(storyHTML) {
-	let processedHTML = storyHTML;
-	Object.keys(flags).forEach(country => {
-		const flag = flags[country];
-		const regex = new RegExp(`{${country}}`, 'g');
-		processedHTML = processedHTML.replace(regex, `<img class="flag" src="${flag}" alt="${country}" />`);
-	});
-	return processedHTML;
-}
 
 export const teams = [
 	{
@@ -122,24 +103,6 @@ export const teams = [
 				date: "28.03.2019 - 02.04.2019",
 			}
 		],
-		story: getStoryWithFlags(
-			`<h2 class="section__title h4"><strong>Team Belarus</strong></h2>
-			<div class="desc">
-				${i18n.t('teams.csgoromcyk.text1')}
-				<p class="roaster-list">
-					<span class="section__subtitle">${i18n.t('teams.csgoromcyk.title1')}:</span>
-					${i18n.t('teams.csgoromcyk.text2')}
-				</p>
-				${i18n.t('teams.csgoromcyk.text3')}
-			</div>
-			<h2 class="section__title h4"><strong>Romčyk.CSGO</strong></h2>
-			<div class="desc">
-				${i18n.t('teams.csgoromcyk.text4')}
-			</div>
-			<h2 class="section__title h4">${i18n.t('teams.csgoromcyk.title4')}</h2>
-			<div class="desc">
-				${i18n.t('teams.csgoromcyk.text5')}
-			</div>
-		`)
+		story: 'teams.csgoromcyk'
 	}
 ];	
