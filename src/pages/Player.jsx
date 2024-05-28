@@ -60,7 +60,7 @@ function Player() {
 								<div className="player-info">
 									<div>
 										<span className="player-info-cat">{t('player.country')}: </span>
-										<span className="player-info-text"><img className="flag" src={flagImages[country]} alt={country} />{t(`countries.${country}`)}</span>
+										<span className="player-info-text"><img className="flag" style={{ marginRight: '4px' }} src={flagImages[country]} alt={country} />{t(`countries.${country}`)}</span>
 									</div>
 									<div>
 										<span className="player-info-cat">{t('player.age')}: </span>
@@ -198,7 +198,7 @@ function Player() {
 											<p>{setup.screen.resolution}</p>
 										</li>
 										<li>
-											<span>{t('player.setup.aspectRation')}</span>
+											<span>{t('player.setup.aspectRatio')}</span>
 											<p>{setup.screen.aspectRatio}</p>
 										</li>
 										<li>
@@ -287,7 +287,7 @@ function Player() {
 													</div>
 													<div className="location-staff">
 														<strong>{t('team.achievements.location')}:</strong>{" "}
-														<img className="flag" src={flagImages[achievement.country]} alt={achievement.country} />{achievement.location}
+														<img className="flag" style={{ marginRight: '4px' }} src={flagImages[achievement.country]} alt={achievement.country} />{achievement.location}
 													</div>
 													<div className="location-staff">
 														<strong>{t('team.achievements.numOfTeams')}:</strong> {achievement.numberOfTeams}

@@ -10,20 +10,31 @@ function Navbar() {
 	const { t } = i18n;
 	const [currentLanguage, setCurrentLanguage] = useState(i18n.language);
 	const languages = ['en', 'be', 'kk'];
-	const otherLanguages = languages.filter(lng => lng !== currentLanguage);
-	const languageFlags = { en: uk, be: by, kk: kz, };
+	const otherLanguages = languages.filter(lng => lng !== currentLanguage && !(currentLanguage === 'be-Latn' && lng === 'be'));
+	const languageFlags = { en: uk, be: by, 'be-Latn': by, kk: kz };
 
 	const headerRef = useRef(null);
-	const bodyRef = useRef(null);
 
 	const changeLanguage = (lng) => {
 		i18n.changeLanguage(lng);
 		setCurrentLanguage(lng);
 	};
 
+	const changeMode = (mode) => {
+		if (mode === 'Кір') {
+			i18n.changeLanguage('be');
+		} else if (mode === 'Lac') {
+			i18n.changeLanguage('be-Latn');
+		}
+	};
+
 	useEffect(() => {
 		const handleLanguageChange = (lng) => {
-			setCurrentLanguage(lng);
+			if (lng === 'be-Latn') {
+				setCurrentLanguage('be');
+			} else {
+				setCurrentLanguage(lng);
+			}
 		};
 		i18n.on('languageChanged', handleLanguageChange);
 		return () => {
@@ -127,15 +138,28 @@ function Navbar() {
 						<nav className="top-nav-lang">
 							<ul className="main-menu">
 								<li className="lang">
-									<a><img className="flag" src={languageFlags[currentLanguage]} alt={currentLanguage} /> {currentLanguage}</a>
+									<a style={{ display: 'flex', alignItems: 'center' }}>
+										<img className="flag" src={languageFlags[currentLanguage]} style={{ marginRight: '4px' }} alt={currentLanguage} />
+										{currentLanguage === 'be-Latn' ? 'be' : currentLanguage}
+									</a>
 									<ul>
 										{otherLanguages.map((lng) => (
 											<li key={lng}>
-												<a onClick={() => changeLanguage(lng)}><img className="flag" src={languageFlags[lng]} alt={lng} /> {lng}</a>
+												<a onClick={() => changeLanguage(lng)} style={{ display: 'flex', alignItems: 'center' }}>
+													<img className="flag" src={languageFlags[lng]} style={{ marginRight: '4px' }} alt={lng} />
+													{lng}
+												</a>
 											</li>
 										))}
 									</ul>
 								</li>
+								{i18n.language.startsWith('be') && (
+									<li style={{ display: 'flex' }}>
+										<a href="#" onClick={() => changeMode('Кір')}>Кір</a>
+										<span style={{ color: 'white' }}>|</span>
+										<a href="#" onClick={() => changeMode('Lac')}>Lac</a>
+									</li>
+								)}
 							</ul>
 						</nav>
 					</div>

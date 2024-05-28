@@ -44,7 +44,7 @@ function News() {
 												<tr>
 													<td>
 														<strong>{t('team.achievements.location')}:</strong>
-														<img className="flag" src={eu} alt="eu" />
+														<img className="flag" style={{ marginRight: '4px' }} src={eu} alt="eu" />
 														{t('countries.eu')}
 													</td>
 												</tr>

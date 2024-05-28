@@ -4,7 +4,19 @@ import { en } from '../assets/translations/en.js';
 import { be } from '../assets/translations/be.js';
 import { kk } from '../assets/translations/kk.js';
 
+import convert from './cyrToLat.js';
+
 i18n
+	.use({
+		type: 'postProcessor',
+		name: 'lacinkaPostProcessor',
+		process: function (value, key, options, translator) {
+			if (translator.language === 'be-Latn') {
+				return convert(value);
+			}
+			return value;
+		}
+	})
 	.use(initReactI18next)
 	.init({
 		resources: {
@@ -16,7 +28,8 @@ i18n
 		fallbackLng: "en",
 		interpolation: {
 			escapeValue: false
-		}
+		},
+		postProcess: ['lacinkaPostProcessor'],
 	});
 
 export default i18n;
