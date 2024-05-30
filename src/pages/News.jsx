@@ -22,7 +22,7 @@ function News() {
 					<div className="article-title">
 						<h1>5K - by Challengermode</h1>
 						<p>
-							{t('news.reports')} <strong>/</strong> Howl Gaming
+							{t('news.reports')} <strong>/</strong> <span lang='en'>Howl Gaming</span>
 						</p>
 					</div>
 				</section>
@@ -43,9 +43,7 @@ function News() {
 												<tr><td><strong>{t('team.achievements.type')}:</strong> Online</td></tr>
 												<tr>
 													<td>
-														<strong>{t('team.achievements.location')}:</strong>
-														<img className="flag" style={{ marginRight: '4px' }} src={eu} alt="eu" />
-														{t('countries.eu')}
+														<strong>{t('team.achievements.location')}:</strong> <img className="flag" style={{ marginRight: '4px' }} src={eu} alt="eu" />{t('countries.eu')}
 													</td>
 												</tr>
 												<tr><td><strong>{t('team.achievements.numOfTeams')}:</strong> 32</td></tr>
@@ -176,7 +174,7 @@ function News() {
 												<td>91</td>
 											</tr>
 											<tr>
-												<td><img className="flag" src={bg} />Rainwaker</td>
+												<td><img className="flag" src={bg} /> Rainwaker</td>
 												<td>12-11</td>
 												<td>1.30</td>
 												<td>idk</td>

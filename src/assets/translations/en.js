@@ -35,6 +35,13 @@ export const en = {
 			text3: "<p>As for the tournament system, it used the classic single elimination, best of 1 grid. The team needs to win 5 rounds to get the first place and win the main prize - €50.</p><p>In in the very first round, our team met the Bulgarian team TIR 3 level <5></5> <strong>FATE</strong>, who occupy a good position on the top of hltv.org. Despite the fact that the captain managed to lead the team to the desired map, the Bulgarians managed to win with a crushing score of 16:4.</p>",
 			text4: "<p>Nevertheless, this is the team's first game with such a composition. The boys have not yet had time to play, and besides, the team's players had technical problems during the tournament. We continue to believe that <3></3> <strong>ex-HOWL eSports</strong> will show their power!</p>"
 		},
+		teamsPage: {
+			label: "Teams",
+			more: "More",
+			csgo: "The CS:GO lineup was the first in the history of our team. That's how the HOWL Gaming journey began. Despite a long period of bad performances and frequent changes in the composition of the team, in 2019 we returned to the legendary roster and now we are ready to show everyone the power of the wolf!",
+			osu: "Meet OSU, our exceptional player Yegor «SeramisV» Lavrentyev. Originally from Ukraine and currently residing in Belgium, this 16-year-old has been showcasing his skills since joining us on in 2017. With sharp aim and strategic prowess, SeramisV continues to represent OSU with unmatched determination and talent on the competitive stage.",
+			csgoromcyk: "Team Belarus, assembled in July 2019, quickly became one of the best on the territory of Belarus. Although the original lineup quickly disbanded, the core of the team reunited under a new name in 2020, bolstered by new talent and legendary coach «Bomb1la». Under the auspices of HOWL, we are once again ready to storm the heights of eSports!"
+		},
 		team: {
 			about: {
 				label: "About the team",
@@ -46,11 +53,11 @@ export const en = {
 				lastResults: "Last Results",
 				score: "Score",
 				tourney: "Tournament",
-				leaders: "Leaders of <strong>{{team}}</strong>",
+				leaders: "Leaders of <0>{{team}}</0>",
 			},
 			achievements: {
 				label: "Achievements",
-				achievementsTeam: "Achievements of <strong>{{team}}</strong>",
+				achievementsTeam: "<0>{{team}}</0> Achievements",
 				trophies: "Trophies",
 				organiser: "Organiser",
 				type: "Type",
@@ -94,6 +101,35 @@ export const en = {
 				crossHair: "Crosshair",
 				fullscreen: "Fullscreen"
 			},
+		},
+		teams: {
+			csgo: `<h2 class="section__title h4">The Original Lineup of <strong>Howl Gaming</strong></h2>
+			<div class="desc">
+			<p>On August 7, 2017, when the <2></2> <strong>RHB</strong> clan left the organisation and created their own independent team, for which the same players continued to play.</p>
+				<p class="roaster-list">
+					<span class="section__subtitle">HOWL Gaming CS:GO August 2017 Lineup:</span>
+					<br><1></1> Batyr <strong>«Klaud»</strong> Kussain<br><2></2> Tikhon <strong>«GODEACH»</strong> Ogniev<br><2></2> Naran <strong>«DeeZiK»</strong> Manjiev<br><0></0> Andrei <strong>«Bulhkin»</strong> Harbachov<br><2></2> Ilya <strong>«SpirTi»</strong> Avdoshkin
+				</p>
+				<p>Due to bad results, <0></0> <strong>«Bulhkin»</strong> and <2></2> <strong>«GODEACH»</strong> were removed from the main team at the end of February 2018. They are replaced by a member of the Ukrainian teams <4></4> <strong>Phantom</strong> <4></4> Bodhan <strong>«Young»</strong> Novykov and former CS:GO player from <2></2> <strong>RHB</strong> <2></2> Daniil <strong>«Nosferatu»</strong> Bykov, whose place in 5 days will be taken by Yegor <strong>«SeramisV»</strong> Lavrentiev. On the same day <4></4> Volodymyr <strong>«batmessiah»</strong> Sokolyuk joins the organisation as a team manager.</p><p>February 12 <2></2> Ilya <strong>«SpirTi»</strong> Avdoshkin and <2></2> <strong>«SeramisV»</strong> leave the team, however, in March, the Ruz player returns to the team, and <2></2> Ivan <strong>«Konung»</strong> Filipov takes the vacant place.</p><p>On April 6, the team takes part in rMatrixCUP#21, and 8 days after a bad performance on it, <1></1> <strong>«Klaud»</strong> announces his departure from the team, thus the rest of the players go inactive.</p>
+			</div>`,
+			csgoromcyk: `<h2 class="section__title h4"><strong>Team Belarus</strong></h2>
+			<div class="desc">
+				<p>On July 3, 2019, the first prototype of the Romčyk - TB (Team Belarus) team was assembled, when former players of various teams decided to build the best team on the territory of Belarus. After the first trials, the composition finally took hold, making a completely Belarusian team.</p>
+				<p class="roaster-list">
+					<span class="section__subtitle">TB lineup for July 2019:</span>
+					<br><0></0> Andrei <strong>«Bulhkin»</strong> Harbachov<br><0></0> Uładzisłau <strong>«Wiedy Mi»</strong> Lićvin<br><0></0> Maciej <strong> «MattJerr»</strong> Ściešyc<br><0></0> Uładzimier <strong>«Kvadrat»</strong> Hierasimienka<br><0></0> <strong>«zigert»</strong>
+				</p>
+				<p>However, due to bad results, the team quickly disintegrates and the tag is quickly forgotten. Players go inactive, leaving professional eSports.</p>
+			</div>
+			<h2 class="section__title h4"><strong>Romčyk.CSGO</strong></h2>
+			<div class="desc">
+				<p>At the same time <0></0> <strong>«jełdzinski»</strong>, a former contender for a place in <0></0> <strong>TB</strong>, who was then known under the nickname <strong>rabcau</strong>, creates his team, and asks <0></0> <strong>«Bulhkin»</strong> to join.</p><p>Soon the sniper <0></0> <strong>TB</strong> <0></0> <strong>\"Wiedy Mi\"</strong> joins the team and the team starts to take leading positions on the Belarusian scene.</p><p>But the triumph did not last long. After some time, many players were forced to leave the team study, work and other factors.</p>
+			</div>
+			<h2 class="section__title h4">New Era</h2>
+			<div class="desc">
+				<p>On January 19, 2020, the team returns to battle. Choosing a new name, but keeping the bone, the team strengthened the squad with new players, increased your tactical potential by taking a legendary player, and now a coach <0></0> <strong>«Bomb1la»</strong>, and now ready to go to new victories!</p>
+			</div>
+		`
 		},
 		players: {
 			roles: {
@@ -164,35 +200,6 @@ export const en = {
 				inst: "Yegor",
 				gen: "SeramisV's",
 			}
-		},
-		teams: {
-			csgo: `<h2 class="section__title h4">The Original Lineup of <strong>Howl Gaming</strong></h2>
-			<div class="desc">
-			<p>On August 7, 2017, when the <2></2> <strong>RHB</strong> clan left the organisation and created their own independent team, for which the same players continued to play.</p>
-				<p class="roaster-list">
-					<span class="section__subtitle">HOWL Gaming CS:GO August 2017 Lineup:</span>
-					<br><1></1> Batyr <strong>«Klaud»</strong> Kussain<br><2></2> Tikhon <strong>«GODEACH»</strong> Ogniev<br><2></2> Naran <strong>«DeeZiK»</strong> Manjiev<br><0></0> Andrei <strong>«Bulhkin»</strong> Harbachov<br><2></2> Ilya <strong>«SpirTi»</strong> Avdoshkin
-				</p>
-				<p>Due to bad results, <0></0> <strong>«Bulhkin»</strong> and <2></2> <strong>«GODEACH»</strong> were removed from the main team at the end of February 2018. They are replaced by a member of the Ukrainian teams <4></4> <strong>Phantom</strong> <4></4> Bodhan <strong>«Young»</strong> Novykov and former CS:GO player from <2></2> <strong>RHB</strong> <2></2> Daniil <strong>«Nosferatu»</strong> Bykov, whose place in 5 days will be taken by Yegor <strong>«SeramisV»</strong> Lavrentiev. On the same day <4></4> Volodymyr <strong>«batmessiah»</strong> Sokolyuk joins the organisation as a team manager.</p><p>February 12 <2></2> Ilya <strong>«SpirTi»</strong> Avdoshkin and <2></2> <strong>«SeramisV»</strong> leave the team, however, in March, the Ruz player returns to the team, and <2></2> Ivan <strong>«Konung»</strong> Filipov takes the vacant place.</p><p>On April 6, the team takes part in rMatrixCUP#21, and 8 days after a bad performance on it, <1></1> <strong>«Klaud»</strong> announces his departure from the team, thus the rest of the players go inactive.</p>
-			</div>`,
-			csgoromcyk: `<h2 class="section__title h4"><strong>Team Belarus</strong></h2>
-			<div class="desc">
-				<p>On July 3, 2019, the first prototype of the Romčyk - TB (Team Belarus) team was assembled, when former players of various teams decided to build the best team on the territory of Belarus. After the first trials, the composition finally took hold, making a completely Belarusian team.</p>
-				<p class="roaster-list">
-					<span class="section__subtitle">TB lineup for July 2019:</span>
-					<br><0></0> Andrei <strong>«Bulhkin»</strong> Harbachov<br><0></0> Uładzisłau <strong>«Wiedy Mi»</strong> Lićvin<br><0></0> Maciej <strong> «MattJerr»</strong> Ściešyc<br><0></0> Uładzimier <strong>«Kvadrat»</strong> Hierasimienka<br><0></0> <strong>«zigert»</strong>
-				</p>
-				<p>However, due to bad results, the team quickly disintegrates and the tag is quickly forgotten. Players go inactive, leaving professional eSports.</p>
-			</div>
-			<h2 class="section__title h4"><strong>Romčyk.CSGO</strong></h2>
-			<div class="desc">
-				<p>At the same time <0></0> <strong>«jełdzinski»</strong>, a former contender for a place in <0></0> <strong>TB</strong>, who was then known under the nickname <strong>rabcau</strong>, creates his team, and asks <0></0> <strong>«Bulhkin»</strong> to join.</p><p>Soon the sniper <0></0> <strong>TB</strong> <0></0> <strong>\"Wiedy Mi\"</strong> joins the team and the team starts to take leading positions on the Belarusian scene.</p><p>But the triumph did not last long. After some time, many players were forced to leave the team study, work and other factors.</p>
-			</div>
-			<h2 class="section__title h4">New Era</h2>
-			<div class="desc">
-				<p>On January 19, 2020, the team returns to battle. Choosing a new name, but keeping the bone, the team strengthened the squad with new players, increased your tactical potential by taking a legendary player, and now a coach <0></0> <strong>«Bomb1la»</strong>, and now ready to go to new victories!</p>
-			</div>
-		`
 		},
 		countries: {
 			by: "Belarus",

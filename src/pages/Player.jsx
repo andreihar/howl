@@ -53,7 +53,7 @@ function Player() {
 						<div className="block-right">
 							<div className="player-name">
 								<h2>{t(firstName)}</h2>
-								<strong><h1>{gamerTag}</h1></strong>
+								<strong lang='en'><h1>{gamerTag}</h1></strong>
 								<h2>{t(lastName)}</h2>
 							</div>
 							<div className="wrap-player-info">
@@ -138,7 +138,7 @@ function Player() {
 					</nav>
 					<div className="wrap">
 						<div className={`${activeTab === 1 ? 'active' : 'selector-sect'} section-half js-sameheight`}>
-							<h2 className="section__title h4">CS:GO <strong>{gamerTag}</strong></h2>
+							<h2 className="section__title h4">CS:GO <strong lang='en'>{gamerTag}</strong></h2>
 							<div className="desc">
 								<Trans i18nKey={story} components={[
 									<img className="flag" src={by} alt="by" />,
@@ -163,7 +163,7 @@ function Player() {
 							<h2 className="section__title h4">{t('player.setup.devices')}</h2>
 							<div className="desc">
 								<nav>
-									<ul>
+									<ul lang='en'>
 										<li>
 											<img src={monitor} />
 											<p>{setup.devices.screen}</p>
@@ -189,7 +189,7 @@ function Player() {
 							</div>
 						</div>
 						<div className={`${activeTab === 2 ? 'active' : 'selector-sect'} section-half section-half--block js-sameheight`}>
-							<h2 className="section__title h4">{t('player.setup.videoSettings')} - <strong>{setup.devices.screen}</strong></h2>
+							<h2 className="section__title h4">{t('player.setup.videoSettings')} - <strong lang='en'>{setup.devices.screen}</strong></h2>
 							<div className="desc">
 								<nav className="settings">
 									<ul>
@@ -219,7 +219,7 @@ function Player() {
 							</div>
 						</div>
 						<div className={`${activeTab === 2 ? 'active' : 'selector-sect'} section-half section-half--block js-sameheight`}>
-							<h2 className="section__title h4">{t('player.setup.mouseSettings')} - <strong>{setup.devices.headphones}</strong></h2>
+							<h2 className="section__title h4">{t('player.setup.mouseSettings')} - <strong lang='en'>{setup.devices.headphones}</strong></h2>
 							<div className="desc">
 								<nav className="settings">
 									<ul>
@@ -263,7 +263,7 @@ function Player() {
 						</div>
 						<div className={`${activeTab === 3 ? 'active' : 'selector-sect'} section-half js-sameheight`}>
 							<h2 className="section__title h4">
-								<Trans i18nKey="team.achievements.achievementsTeam" values={{ team: t(gamerTagGen) }} />
+								<Trans i18nKey="team.achievements.achievementsTeam" values={{ team: t(gamerTagGen) }} components={[<strong lang='en' />]} />
 							</h2>
 							<div className="desc">
 								<span className="section__subtitle">{t('team.achievements.trophies')}</span>
@@ -276,8 +276,8 @@ function Player() {
 												className="active animate-player"
 											>
 												<div className="info-staff">
-													<div className="name-staff">
-														<strong>{achievement.name}</strong>
+													<div className="name-staff" >
+														<strong lang='en'>{achievement.name}</strong>
 													</div>
 													<div className="location-staff">
 														<strong>{t('team.achievements.organiser')}:</strong> {achievement.organiser}

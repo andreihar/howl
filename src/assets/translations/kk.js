@@ -13,7 +13,7 @@ export const kk = {
 		},
 		footer: {
 			about: "Biz twraly",
-			description: "HOWL Gamıng – käsibı kıbersport uıymy, onyŋ maqsaty TMD awmağynda ğana emes, sonymen qatar bükil älemde elektrondy sport türlerin damytw jäne qoldaw bolyp tabylady.",
+			description: "HOWL Gaming – käsibı kıbersport uıymy, onyŋ maqsaty TMD awmağynda ğana emes, sonymen qatar bükil älemde elektrondy sport türlerin damytw jäne qoldaw bolyp tabylady.",
 			contacts: "Kontaktiler",
 			copyright: "Barlyq quqyqtar qorğalğan"
 		},
@@ -35,6 +35,13 @@ export const kk = {
 			text3: "<p>Twrnır jüıesine keletin bolsaq, ol klasıkalyq jalğyz iriktew ädisin qoldandy, 1 tordyŋ eŋ jaqsysy. Komanda birinşi oryndy alw jäne bas jüldeni - €50 utyp alw üşin 5 rawndta jeŋiske jetwi kerek.</p><p>Birinşi twrda bizdiŋ komanda hltv.org saıtynda jaqsy orynğa ıe bolğan <5></5> <strong>FATE</strong> bolgarıalyq TIR 3 komandasymen kezdesti kapıtan komandasyn qalağan kartağa alyp şyqqanyn aıtsa, bolgarlar 16:4 esebimen jeŋiske jetti.</p>",
 			text4: "<p>Degenmen, bul komandanyŋ mundaı qurammen birinşi oıyny. Uldar äli oınap ülgermedi, onyŋ üstine twrnır barysynda komanda oıynşylarynda tehnıkalyq aqawlar boldy. Biz äli de senemiz <3></3> <strong>ex-HOWL eSports</strong> öz küşin körsetedi!</p>"
 		},
+		teamsPage: {
+			label: "Komandalar",
+			more: "Köbirek",
+			csgo: "CS:GO quramy bizdiŋ komanda tarıhyndağy birinşi boldy. HOWL Gaming saıahaty osylaı bastaldy. Uzaq waqyt boıy naşar körsetkişterge jäne komanda quramynyŋ jıi özgerwine qaramastan, 2019 jyly biz aty aŋyzğa aınalğan oıynğa qaıta oraldyq. Tizim, endi biz barlyğyna qasqyrdyŋ küşin körsetwge daıynbyz!",
+			osu: "OSU-men tanys bolyŋyz, bizdiŋ erekşe oıynşy Egor «SeramisV» Lavrentyev. Twğan jeri Wkraınadan şyqqan jäne qazir Belgıada turatyn bul 16 jastağy jasöspirim 2017 jyly bizge qosylğannan beri öz şeberligin körsetip keledi. Muqıat maqsaty men strategıalyq şeberligi SeramisV. Bäsekelestik sahnasynda teŋdesi joq jiger men talantpen OSU-ny körsetwdi jalğastyrwda.",
+			csgoromcyk: "2019 jyldyŋ şildesinde jınalğan Belarüs komandasy tez arada Belarüs awmağyndağy üzdikterdiŋ birine aınaldy. Bastapqy quram tez tarağanymen, komandanyŋ negizgi quramy 2020 jyly jaŋa talant pen aty aŋyzğa aınalğan «Bomb1la» jattyqtyrwşynyŋ arqasynda jaŋa atawmen qaıta biriktirildi"
+		},
 		team: {
 			about: {
 				label: "Komanda twraly",
@@ -46,11 +53,11 @@ export const kk = {
 				lastResults: "Soŋğy nätıjeler",
 				score: "Upaı",
 				tourney: "Twrnır",
-				leaders: "<strong>{{team}}</strong> köşbasşylary",
+				leaders: "<0>{{team}}</0> köşbasşylary",
 			},
 			achievements: {
 				label: "Jetistikter",
-				achievementsTeam: "<strong>{{team}}</strong> jetistikteri",
+				achievementsTeam: "<0>{{team}}</0> jetistikteri",
 				trophies: "Trofeıler",
 				organiser: "Uıymdastyrwşylar",
 				type: "Türi",
@@ -94,6 +101,35 @@ export const kk = {
 				crossHair: "Köru",
 				fullscreen: "Tolyq Ekran"
 			},
+		},
+		teams: {
+			csgo: `<h2 class="section__title h4"><strong lang="en">Howl Gaming CS:GO</strong> Bastapqy Quramy</h2>
+			<div class="desc">
+			<p>2017 jyldyñ 7 tamyzynda, <2></2> <strong>RHB</strong> klany uıymnan şyğyp, özderiniñ täwelsiz komandasyn qurğan kezde, sol oıynşylar oınawdy jalğastyrdy.</p>
+				<p class="roaster-list">
+					<span class="section__subtitle"><span lang="en">HOWL Gaming CS:GO</span> August 2017 Lineup:</span>
+					<br><1></1> Batyr <strong>«Klaud»</strong> Kussain<br><2></2> Tikhon <strong>«GODEACH»</strong> Ogniev<br><2></2> Naran <strong>«DeeZiK»</strong> Manjiev<br><0></0> Andrei <strong>«Bulhkin»</strong> Harbachov<br><2></2> Ilya <strong>«SpirTi»</strong> Avdoshkin
+				</p>
+				<p>Jağymsyz nätıjelerge baılanysty <0></0> <strong>«Bulhkin»</strong> jäne <2></2> <strong>«GODEACH»</strong> negizgi komandadan şyğaryldy 2018 jyldyñ aqpan aıynyñ soñy. Olardy wkraın komandalarynyñ müşesi <4></4> <strong>Phantom</strong> <4></4> Bodhan <strong>«Young»</strong> jäne burynğy CS:GO oıynşysy <2></2> <strong>RHB</strong> <2></2> Daniil <strong>«Nosferatu»</strong> Bykov awystyrdy, onyñ orny 5 künnen keıin bolady Yegor <strong>«SeramisV»</strong> Lavrentiev. Sol küni <4></4> Volodimir <strong>«batmessiah»</strong> Sokolük uıymğa top menejeri retinde qosylady.</p><p>12 aqpan <2></2> Ilya <strong>«SpirTi»</strong> Avdoshkin jäne <2></2> <strong>«SeramisV»</strong> komandadan ketedi, alaıda nawryz aıynda Rwz oıynşysy komandağa oraldy, al <2></2> Ivan <strong>«Konung»</strong> Filipov bos oryndy alady.</p><p>6 säwirde komanda rMatrixCUP#21 twrnırine qatysady, jäne 8 künnen keıin naşar öner körsetkennen keıin <1></1> <strong>«Klaud»</strong> komandadan ketetinin habarlaıdy, osylaışa qalğan oıynşylar äreketsiz qalady.</p>
+			</div>`,
+			csgoromcyk: `<h2 class="section__title h4"><strong>Team Belarus</strong></h2>
+			<div class="desc">
+				<p>2019 jyldyñ 3 şildesinde ärtürli komandalardyñ burynğy oıynşylary Belarüs awmağynda eñ jaqsy komanda qurw twraly şeşim qabyldağan kezde Romčyk - TB (Team Belarus) komandasynyñ alğaşqy prototıpi jınaldy. Alğaşqy synaqtardan keıin kompozısıa tolyğymen Belarüs komandasyn qurap, küşine endi.</p>
+				<p class="roaster-list">
+					<span class="section__subtitle">2019 jyldyñ şilde aıyndağy TB quramy:</span>
+					<br><0></0> Andrei <strong>«Bulhkin»</strong> Harbachov<br><0></0> Uładzisłau <strong>«Wiedy Mi»</strong> Lićvin<br><0></0> Maciej <strong> «MattJerr»</strong> Ściešyc<br><0></0> Uładzimier <strong>«Kvadrat»</strong> Hierasimienka<br><0></0> <strong>«zigert»</strong>
+				</p>
+				<p>Alaıda naşar nätıjelerge baılanysty komanda tez ydyrap, teg tez umytylady. Oıynşylar käsipqoı kıbersportty qaldyryp, belsendi emes bolady.</p>
+			</div>
+			<h2 class="section__title h4"><strong>Romčyk.CSGO</strong></h2>
+			<div class="desc">
+				<p>Sonymen birge <0></0> <strong>«jełdzinski»</strong>, <0></0> <strong>TB</strong>den orynğa burynğy ümitker, ol sodan keıin <strong>rabcau</strong> laqap atymen belgili, öz komandasyn qurady jäne <0></0> <strong>«Bulhkin»</strong>ke qosylwdy suraıdy.</p><p>Jaqynda mergen <0></0> <strong>TB</strong> <0></0> <strong>\"Wiedy Mi\"</strong> komandağa qosylyp, komanda Belarüs sahnasynda jetekşi oryndardy ıelene bastaıdy.</p><p>Biraq jeñis uzaqqa sozylmady. Biraz waqyttan keıin köptegen oıynşylar komandadan oqw, jumys jäne basqa faktorlardan ketwge mäjbür boldy.</p>
+			</div>
+			<h2 class="section__title h4">Jaña Däwir</h2>
+			<div class="desc">
+				<p>2020 jyldyñ 19 qañtarynda komanda şaıqasqa qaıtady. Jaña atawdy tañdaı otyryp, biraq süıekti saqtaı otyryp, komanda quramyn jaña oıynşylarmen nyğaıtty, aty añyzğa aınalğan oıynşyny jäne qazir <0></0> <strong>«Bomb1la»</strong> jattyqtyrwşysy alw arqyly taktıkalyq älewetiñizdi arttyrdy, endi jaña jeñisterge barwğa daıyn!</p>
+			</div>
+			`
 		},
 		players: {
 			roles: {
@@ -164,35 +200,6 @@ export const kk = {
 				inst: "Yegorğa",
 				gen: "SeramisV'nıŋ",
 			}
-		},
-		teams: {
-			csgo: `<h2 class="section__title h4"><strong>Howl Gaming</strong> Bastapqy Quramy</h2>
-			<div class="desc">
-			<p>2017 jyldyñ 7 tamyzynda, <2></2> <strong>RHB</strong> klany uıymnan şyğyp, özderiniñ täwelsiz komandasyn qurğan kezde, sol oıynşylar oınawdy jalğastyrdy.</p>
-				<p class="roaster-list">
-					<span class="section__subtitle">HOWL Gaming CS:GO August 2017 Lineup:</span>
-					<br><1></1> Batyr <strong>«Klaud»</strong> Kussain<br><2></2> Tikhon <strong>«GODEACH»</strong> Ogniev<br><2></2> Naran <strong>«DeeZiK»</strong> Manjiev<br><0></0> Andrei <strong>«Bulhkin»</strong> Harbachov<br><2></2> Ilya <strong>«SpirTi»</strong> Avdoshkin
-				</p>
-				<p>Jağymsyz nätıjelerge baılanysty <0></0> <strong>«Bulhkin»</strong> jäne <2></2> <strong>«GODEACH»</strong> negizgi komandadan şyğaryldy 2018 jyldyñ aqpan aıynyñ soñy. Olardy wkraın komandalarynyñ müşesi <4></4> <strong>Phantom</strong> <4></4> Bodhan <strong>«Young»</strong> jäne burynğy CS:GO oıynşysy <2></2> <strong>RHB</strong> <2></2> Daniil <strong>«Nosferatu»</strong> Bykov awystyrdy, onyñ orny 5 künnen keıin bolady Yegor <strong>«SeramisV»</strong> Lavrentiev. Sol küni <4></4> Volodimir <strong>«batmessiah»</strong> Sokolük uıymğa top menejeri retinde qosylady.</p><p>12 aqpan <2></2> Ilya <strong>«SpirTi»</strong> Avdoshkin jäne <2></2> <strong>«SeramisV»</strong> komandadan ketedi, alaıda nawryz aıynda Rwz oıynşysy komandağa oraldy, al <2></2> Ivan <strong>«Konung»</strong> Filipov bos oryndy alady.</p><p>6 säwirde komanda rMatrixCUP#21 twrnırine qatysady, jäne 8 künnen keıin naşar öner körsetkennen keıin <1></1> <strong>«Klaud»</strong> komandadan ketetinin habarlaıdy, osylaışa qalğan oıynşylar äreketsiz qalady.</p>
-			</div>`,
-			csgoromcyk: `<h2 class="section__title h4"><strong>Team Belarus</strong></h2>
-			<div class="desc">
-				<p>2019 jyldyñ 3 şildesinde ärtürli komandalardyñ burynğy oıynşylary Belarüs awmağynda eñ jaqsy komanda qurw twraly şeşim qabyldağan kezde Romčyk - TB (Belarws komandasy) komandasynyñ alğaşqy prototıpi jınaldy. Alğaşqy synaqtardan keıin kompozısıa tolyğymen Belarüs komandasyn qurap, küşine endi.</p>
-				<p class="roaster-list">
-					<span class="section__subtitle">2019 jyldyñ şilde aıyndağy TB quramy:</span>
-					<br><0></0> Andrei <strong>«Bulhkin»</strong> Harbachov<br><0></0> Uładzisłau <strong>«Wiedy Mi»</strong> Lićvin<br><0></0> Maciej <strong> «MattJerr»</strong> Ściešyc<br><0></0> Uładzimier <strong>«Kvadrat»</strong> Hierasimienka<br><0></0> <strong>«zigert»</strong>
-				</p>
-				<p>Alaıda naşar nätıjelerge baılanysty komanda tez ydyrap, teg tez umytylady. Oıynşylar käsipqoı kıbersportty qaldyryp, belsendi emes bolady.</p>
-			</div>
-			<h2 class="section__title h4"><strong>Romčyk.CSGO</strong></h2>
-			<div class="desc">
-				<p>Sonymen birge <0></0> <strong>«jełdzinski»</strong>, <0></0> <strong>TB</strong>den orynğa burynğy ümitker, ol sodan keıin <strong>rabcau</strong> laqap atymen belgili, öz komandasyn qurady jäne <0></0> <strong>«Bulhkin»</strong>ke qosylwdy suraıdy.</p><p>Jaqynda mergen <0></0> <strong>TB</strong> <0></0> <strong>\"Wiedy Mi\"</strong> komandağa qosylyp, komanda Belarüs sahnasynda jetekşi oryndardy ıelene bastaıdy.</p><p>Biraq jeñis uzaqqa sozylmady. Biraz waqyttan keıin köptegen oıynşylar komandadan oqw, jumys jäne basqa faktorlardan ketwge mäjbür boldy.</p>
-			</div>
-			<h2 class="section__title h4">Jaña Däwir</h2>
-			<div class="desc">
-				<p>2020 jyldyñ 19 qañtarynda komanda şaıqasqa qaıtady. Jaña atawdy tañdaı otyryp, biraq süıekti saqtaı otyryp, komanda quramyn jaña oıynşylarmen nyğaıtty, aty añyzğa aınalğan oıynşyny jäne qazir <0></0> <strong>«Bomb1la»</strong> jattyqtyrwşysy alw arqyly taktıkalyq älewetiñizdi arttyrdy, endi jaña jeñisterge barwğa daıyn!</p>
-			</div>
-			`
 		},
 		countries: {
 			by: "Belarüs",

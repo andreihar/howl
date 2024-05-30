@@ -681,11 +681,9 @@ button:hover {
 	margin-bottom: 15px;
 }
 .discipline {
-	width: 100%;
 	min-height: 600px;
-	float: left;
 	color: #d8d8d8;
-	background-size: cover;
+	position: relative;
 }
 .discipline .text {
 	width: 63%;
@@ -707,6 +705,29 @@ button:hover {
 	display: inline-block;
     vertical-align: middle;
 	margin-right: 20px;
+}
+.dimmed-background {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-size: cover;
+    z-index: 0;
+}
+.dimmed-background::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+.text {
+    position: relative;
+    z-index: 2;
 }
 .text h1 {
 	display: inline-block;

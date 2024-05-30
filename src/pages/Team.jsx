@@ -71,7 +71,7 @@ function Team() {
 							<div className="team-name" style={{ width: 510 }}>
 								<img src={flagImages[country]} className="team-game-flag" />
 								<div className="team-header">
-									<p className="team-tag">{name}</p>
+									<p className="team-tag" lang='en'>{name}</p>
 									<br />
 									<span className="team-hashtag">{hashtag}</span>
 								</div>
@@ -172,7 +172,7 @@ function Team() {
 					<div className="wrap">
 						<div className={`${activeTab === 1 ? 'active' : 'selector-sect'} section-half js-sameheight`}>
 							<h2 className="section__title h4">
-								<Trans i18nKey="team.about.leaders" values={{ team: name }} />
+								<Trans i18nKey="team.about.leaders" values={{ team: name }} components={[<strong lang='en' />]} />
 							</h2>
 							<div className="desc">
 								<div className="headofteam">
@@ -192,7 +192,7 @@ function Team() {
 						</div>
 						<div className={`${activeTab === 2 ? 'active' : 'selector-sect'} section-half js-sameheight`}>
 							<h2 className="section__title h4">
-								<Trans i18nKey="team.achievements.achievementsTeam" values={{ team: name }} />
+								<Trans i18nKey="team.achievements.achievementsTeam" values={{ team: name }} components={[<strong lang='en' />]} />
 							</h2>
 							<div className="desc">
 								<span className="section__subtitle">{t('team.achievements.trophies')}</span>
@@ -206,7 +206,7 @@ function Team() {
 											>
 												<div className="info-staff">
 													<div className="name-staff">
-														<strong>{achievement.name}</strong>
+														<strong lang='en'>{achievement.name}</strong>
 													</div>
 													<div className="location-staff">
 														<strong>{t('team.achievements.organiser')}:</strong> {achievement.organiser}
