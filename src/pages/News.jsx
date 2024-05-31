@@ -80,7 +80,7 @@ function News() {
 									<img className="flag" src={ua} alt="ua" />,
 									<img className="flag" src={bg} alt="bg" />,
 								]} />
-								<div className="description-one-news">
+								<div className="description-one-news" style={{ padding: '1rem 0' }}>
 									<table className="player-statistics">
 										<caption>Overpass</caption>
 										<thead>

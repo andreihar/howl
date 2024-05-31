@@ -14,16 +14,16 @@ function Footer() {
 		<>
 			<section className="section section--dark sponsors">
 				<div className="wrap">
-					<a className="sponsors__item" href="https://www.gov.kz/memleket/entities/mod?lang=en">
+					<a className="sponsors__item" href="https://www.gov.kz/memleket/entities/mod?lang=en" target="_blank" rel="noopener noreferrer">
 						<img src={sponsor1} alt="Ministry of Defense of the Republic of Kazakhstan" />
 					</a>
-					<a className="sponsors__item" href="https://batyrmall.kz/">
+					<a className="sponsors__item" href="https://batyrmall.kz/" target="_blank" rel="noopener noreferrer">
 						<img src={sponsor2} alt="Batyr Mall" />
 					</a>
-					<a className="sponsors__item" href="https://www.shymkent.info/about-shymkent">
+					<a className="sponsors__item" href="https://www.shymkent.info/about-shymkent" target="_blank" rel="noopener noreferrer">
 						<img src={sponsor3} alt="Shymkent" />
 					</a>
-					<a className="sponsors__item" href="https://www.defense.gouv.fr/air">
+					<a className="sponsors__item" href="https://www.defense.gouv.fr/air" target="_blank" rel="noopener noreferrer">
 						<img src={sponsor4} alt="Armée de l'Air et de l'Espace" />
 					</a>
 				</div>

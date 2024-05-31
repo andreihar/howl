@@ -29,54 +29,56 @@ function Teams() {
 	return (
 		<>
 			<Navbar />
-			<div className="main-container">
-				<section className="section team-background games-background">
-					<div className="article-title">
-						<h1>{t('teamsPage.label')}</h1>
-						<p lang='en'>Howl Gaming</p>
-					</div>
-				</section>
-				{teamNames.map((teamName, index) => {
-					const team = teams.find(p => p.teamTag.toLowerCase() === teamName);
-					const teamMembers = [
-						...team.players.map(gamerTag =>
-							playerObjects.find(player => player.gamerTag.toLowerCase() === gamerTag.toLowerCase())
-						),
-						...team.leaders.map(gamerTag =>
-							playerObjects.find(player => player.gamerTag.toLowerCase() === gamerTag.toLowerCase())
-						)
-					];
-					return (
-						<div className="discipline">
-							<div className="dimmed-background" style={{ backgroundImage: `url(${teamBackgrounds[index]})` }}></div>
-							<div className="text">
-								<div>
-									<img src={teamLogos[index]} className="logo" />
-									<h1>{team.name}</h1>
-								</div>
-								<p style={{ paddingTop: '2rem' }}>{t(`teamsPage.${teamNames[index]}`)}</p>
-								<p className="roaster-list">
-									<br />
-									{teamMembers.map((player) => (
-										<>
-											<Link to={`../player/${player.gamerTag}`}>
-												<img className="flag" src={flagImages[player.country]} alt={player.country} />{" "}
-												{t(player.firstName)} <strong>«{player.gamerTag}»</strong> {t(player.lastName)}
-											</Link>
-											<br />
-										</>
-									))}
-									<br />
-								</p>
-								<Link to={`../team/${teamName}`}>
-									<button className="button">{t('teamsPage.more')}</button>
-								</Link>
-							</div>
+			<div>
+				<div className="main-container">
+					<section className="section team-background games-background">
+						<div className="article-title">
+							<h1>{t('teamsPage.label')}</h1>
+							<p lang='en'>Howl Gaming</p>
 						</div>
-					);
-				})}
-			</div >
-			{/* <Footer /> */}
+					</section>
+					{teamNames.map((teamName, index) => {
+						const team = teams.find(p => p.teamTag.toLowerCase() === teamName);
+						const teamMembers = [
+							...team.players.map(gamerTag =>
+								playerObjects.find(player => player.gamerTag.toLowerCase() === gamerTag.toLowerCase())
+							),
+							...team.leaders.map(gamerTag =>
+								playerObjects.find(player => player.gamerTag.toLowerCase() === gamerTag.toLowerCase())
+							)
+						];
+						return (
+							<div className="discipline">
+								<div className="dimmed-background" style={{ backgroundImage: `url(${teamBackgrounds[index]})` }}></div>
+								<div className="text">
+									<div>
+										<img src={teamLogos[index]} className="logo" />
+										<h1>{team.name}</h1>
+									</div>
+									<p style={{ paddingTop: '2rem' }}>{t(`teamsPage.${teamNames[index]}`)}</p>
+									<p className="roaster-list">
+										<br />
+										{teamMembers.map((player) => (
+											<>
+												<Link to={`../player/${player.gamerTag}`}>
+													<img className="flag" src={flagImages[player.country]} alt={player.country} />{" "}
+													{t(player.firstName)} <strong>«{player.gamerTag}»</strong> {t(player.lastName)}
+												</Link>
+												<br />
+											</>
+										))}
+										<br />
+									</p>
+									<Link to={`../team/${teamName}`}>
+										<button className="button">{t('teamsPage.more')}</button>
+									</Link>
+								</div>
+							</div>
+						);
+					})}
+				</div>
+			</div>
+			<Footer />
 		</>
 	);
 }
