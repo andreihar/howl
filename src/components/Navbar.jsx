@@ -63,32 +63,32 @@ function Navbar() {
 				<nav className="nav top-nav-social">
 					<ul className="social-menu">
 						<li className="social-menu-item">
-							<a href="https://vk.com/howl7rounds">
+							<a href="https://vk.com/howl7rounds" aria-label="Link to VK profile">
 								<i className="fab fa-vk"></i>
 							</a>
 						</li>
 						<li className="social-menu-item">
-							<a href="https://instagram.com/howl7rounds">
+							<a href="https://instagram.com/howl7rounds" aria-label="Link to Instagram profile">
 								<i className="fab fa-instagram"></i>
 							</a>
 						</li>
 						<li className="social-menu-item">
-							<a href="http://www.facebook.com/howl7rounds">
+							<a href="http://www.facebook.com/howl7rounds" aria-label="Link to Facebook profile">
 								<i className="fab fa-facebook-f"></i>
 							</a>
 						</li>
 						<li className="social-menu-item">
-							<a href="http://www.facebook.com/howl7rounds">
+							<a href="http://www.twitter.com/howl7rounds" aria-label="Link to Twitter profile">
 								<i className="fab fa-twitter"></i>
 							</a>
 						</li>
 						<li className="social-menu-item">
-							<a href="http://www.youtube.com/c/howl7rounds">
+							<a href="http://www.youtube.com/c/howl7rounds" aria-label="Link to YouTube channel">
 								<i className="fab fa-youtube"></i>
 							</a>
 						</li>
 						<li className="social-menu-item">
-							<a href="http://www.youtube.com/c/howl7rounds">
+							<a href="http://www.twitch.tv/howl7rounds" aria-label="Link to Twitch channel">
 								<i className="fab fa-twitch"></i>
 							</a>
 						</li>
@@ -139,7 +139,7 @@ function Navbar() {
 							<ul className="main-menu">
 								<li className="lang">
 									<a style={{ display: 'flex', alignItems: 'center' }}>
-										<img className="flag" src={languageFlags[currentLanguage]} style={{ marginRight: '4px' }} alt={currentLanguage} />
+										<img className="flag" src={languageFlags[currentLanguage]} style={{ marginRight: '4px' }} alt={`Flag representing ${currentLanguage} language`} />
 										{currentLanguage === 'be-Latn' ? 'be' : currentLanguage}
 									</a>
 									<ul>
@@ -155,9 +155,9 @@ function Navbar() {
 								</li>
 								{i18n.language.startsWith('be') && (
 									<li style={{ display: 'flex' }}>
-										<a href="#" onClick={() => changeMode('Кір')}>Кір</a>
+										<a onClick={() => changeMode('Кір')}>Кір</a>
 										<span style={{ color: 'white' }}>|</span>
-										<a href="#" onClick={() => changeMode('Lac')}>Lac</a>
+										<a onClick={() => changeMode('Lac')}>Lac</a>
 									</li>
 								)}
 							</ul>

@@ -35,33 +35,33 @@ function Footer() {
 							<div className="social-footer">
 								<ul className="social-menu">
 									<li className="social-menu-item">
-										<a href="https://vk.com/howl7rounds">
-											<i className="fab fa-vk" />
+										<a href="https://vk.com/howl7rounds" aria-label="Link to VK profile">
+											<i className="fab fa-vk"></i>
 										</a>
 									</li>
 									<li className="social-menu-item">
-										<a href="https://instagram.com/howl7rounds">
-											<i className="fab fa-instagram" />
+										<a href="https://instagram.com/howl7rounds" aria-label="Link to Instagram profile">
+											<i className="fab fa-instagram"></i>
 										</a>
 									</li>
 									<li className="social-menu-item">
-										<a href="http://www.facebook.com/howl7rounds">
-											<i className="fab fa-facebook-f" />
+										<a href="http://www.facebook.com/howl7rounds" aria-label="Link to Facebook profile">
+											<i className="fab fa-facebook-f"></i>
 										</a>
 									</li>
 									<li className="social-menu-item">
-										<a href="http://www.facebook.com/howl7rounds">
-											<i className="fab fa-twitter" />
+										<a href="http://www.twitter.com/howl7rounds" aria-label="Link to Twitter profile">
+											<i className="fab fa-twitter"></i>
 										</a>
 									</li>
 									<li className="social-menu-item">
-										<a href="http://www.youtube.com/c/howl7rounds">
-											<i className="fab fa-youtube" />
+										<a href="http://www.youtube.com/c/howl7rounds" aria-label="Link to YouTube channel">
+											<i className="fab fa-youtube"></i>
 										</a>
 									</li>
 									<li className="social-menu-item">
-										<a href="http://www.youtube.com/c/howl7rounds">
-											<i className="fab fa-twitch" />
+										<a href="http://www.twitch.tv/howl7rounds" aria-label="Link to Twitch channel">
+											<i className="fab fa-twitch"></i>
 										</a>
 									</li>
 								</ul>
@@ -74,9 +74,9 @@ function Footer() {
 						<div className="content-footer">
 							<h3>{t('footer.contacts')}</h3>
 							<p>
-								Business e-mail: <a>example@mail.com</a><br />
-								Media e-mail: <a>example@mail.com</a><br />
-								Tournaments e-mail: <a>example@mail.com</a><br />
+								Business e-mail: <a href="mailto:example@mail.com">example@mail.com</a><br />
+								Media e-mail: <a href="mailto:example@mail.com">example@mail.com</a><br />
+								Tournaments e-mail: <a href="mailto:example@mail.com">example@mail.com</a><br />
 							</p>
 						</div>
 					</div>

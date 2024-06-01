@@ -40,7 +40,7 @@ function Team() {
 
 	let storyTranslation = t(story);
 	['<0>', '<1>', '<2>', '<3>', '<4>'].forEach((placeholder, index) => {
-		const imageHtml = `<img class="flag" src="${[by, kz, ru, cis, ua][index]}" alt="" />`;
+		const imageHtml = `<img class="flag" src="${[by, kz, ru, cis, ua][index]}" alt="${['by', 'kz', 'ru', 'cis', 'ua'][index]}" />`;
 		const regex = new RegExp(placeholder.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&'), 'g');
 		storyTranslation = storyTranslation.replace(regex, imageHtml);
 	});
@@ -69,7 +69,7 @@ function Team() {
 					<section className={`${activeTab === 1 ? 'active' : 'selector-sect'} section team-stats team-info`}>
 						<div className="wrap">
 							<div className="team-name" style={{ width: 510 }}>
-								<img src={flagImages[country]} className="team-game-flag" />
+								<img src={flagImages[country]} className="team-game-flag" alt={country} />
 								<div className="team-header">
 									<p className="team-tag" lang='en'>{name}</p>
 									<br />
@@ -132,7 +132,7 @@ function Team() {
 													</div>
 													<div className="vs">vs</div>
 													<div className="opponent">
-														<img src={match.logo} alt="Opponent" />
+														<img src={match.logo} alt="Opponent logo" />
 													</div>
 												</div>
 											</div>

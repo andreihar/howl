@@ -205,7 +205,7 @@ export const players = [
 			facebook: "http://www.facebook.com/klaud.lolich"
 		},
 		story: 'players.klaud.story',
-		highlights: ['https://www.youtube.com/embed/dhLurFxO-rA'],
+		highlights: ['https://www.youtube.com/embed/bbCtNOQ25ww', 'https://www.youtube.com/embed/M31JsK3Pjfs', 'https://www.youtube.com/embed/ncwiBBAYsVI'],
 		setup: {
 			devices: {
 				screen: "Acer Aspire V 17 Nitro BE", mouse: "Razer Mamba TE", keyboard: "Razer Blackwidow 2013",

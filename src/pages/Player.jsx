@@ -48,7 +48,7 @@ function Player() {
 				<section className="section team-background csgo-background">
 					<div className="player-table">
 						<div className="block-left">
-							<img src={image} />
+							<img src={image} alt={gamerTag} />
 						</div>
 						<div className="block-right">
 							<div className="player-name">
@@ -83,42 +83,42 @@ function Player() {
 								<ul className="social-menu social-menu-player">
 									{socials.vk && (
 										<li className="social-menu-item">
-											<a href={socials.vk}>
+											<a href={socials.vk} aria-label="Link to VK profile">
 												<i className="fab fa-vk" />
 											</a>
 										</li>
 									)}
 									{socials.instagram && (
 										<li className="social-menu-item">
-											<a href={socials.instagram}>
+											<a href={socials.instagram} aria-label="Link to Instagram profile">
 												<i className="fab fa-instagram" />
 											</a>
 										</li>
 									)}
 									{socials.facebook && (
 										<li className="social-menu-item">
-											<a href={socials.facebook}>
+											<a href={socials.facebook} aria-label="Link to Facebook profile">
 												<i className="fab fa-facebook-f" />
 											</a>
 										</li>
 									)}
 									{socials.twitter && (
 										<li className="social-menu-item">
-											<a href={socials.twitter}>
+											<a href={socials.twitter} aria-label="Link to Twitter profile">
 												<i className="fab fa-twitter" />
 											</a>
 										</li>
 									)}
 									{socials.youtube && (
 										<li className="social-menu-item">
-											<a href={socials.youtube}>
+											<a href={socials.youtube} aria-label="Link to YouTube channel">
 												<i className="fab fa-youtube" />
 											</a>
 										</li>
 									)}
 									{socials.twitch && (
 										<li className="social-menu-item">
-											<a href={socials.twitch}>
+											<a href={socials.twitch} aria-label="Link to Twitch channel">
 												<i className="fab fa-twitch" />
 											</a>
 										</li>
@@ -165,23 +165,23 @@ function Player() {
 								<nav>
 									<ul lang='en'>
 										<li>
-											<img src={monitor} />
+											<img src={monitor} alt="monitor" />
 											<p>{setup.devices.screen}</p>
 										</li>
 										<li>
-											<img src={mouseImage} />
+											<img src={mouseImage} alt="mouseImage" />
 											<p>{setup.devices.mouse}</p>
 										</li>
 										<li>
-											<img src={keyboard} />
+											<img src={keyboard} alt="keyboard" />
 											<p>{setup.devices.keyboard}</p>
 										</li>
 										<li>
-											<img src={headphones} />
+											<img src={headphones} alt="headphones" />
 											<p>{setup.devices.headphones}</p>
 										</li>
 										<li>
-											<img src={mousepad} />
+											<img src={mousepad} alt="mousepad" />
 											<p>{setup.devices.mousepad}</p>
 										</li>
 									</ul>

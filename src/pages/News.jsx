@@ -84,7 +84,7 @@ function News() {
 										<caption>Overpass</caption>
 										<thead>
 											<tr>
-												<th><img className="flag" src={cis} /> Howl Gaming <strong>4</strong></th>
+												<th><img className="flag" src={cis} alt="cis" /> Howl Gaming <strong>4</strong></th>
 												<th>{t('news.kd')}</th>
 												<th>{t('news.kdRatio')}</th>
 												<th>{t('news.kr')}</th>
@@ -94,7 +94,7 @@ function News() {
 										</thead>
 										<tbody>
 											<tr>
-												<td><img className="flag" src={kz} /> KLDS</td>
+												<td><img className="flag" src={kz} alt="kz" /> KLDS</td>
 												<td>24-16</td>
 												<td>1.6</td>
 												<td>idk</td>
@@ -102,7 +102,7 @@ function News() {
 												<td>123</td>
 											</tr>
 											<tr>
-												<td><img className="flag" src={by} /> Bulhkin</td>
+												<td><img className="flag" src={by} alt="by" /> Bulhkin</td>
 												<td>9-18</td>
 												<td>0.47</td>
 												<td>idk</td>
@@ -110,7 +110,7 @@ function News() {
 												<td>46</td>
 											</tr>
 											<tr>
-												<td><img className="flag" src={ru} /> DeeZiK</td>
+												<td><img className="flag" src={ru} alt="ru" /> DeeZiK</td>
 												<td>8-17</td>
 												<td>0.41</td>
 												<td>idk</td>
@@ -118,7 +118,7 @@ function News() {
 												<td>55</td>
 											</tr>
 											<tr>
-												<td><img className="flag" src={ua} /> bat</td>
+												<td><img className="flag" src={ua} alt="ua" /> bat</td>
 												<td>7-19</td>
 												<td>0.38</td>
 												<td>idk</td>
@@ -126,7 +126,7 @@ function News() {
 												<td>40</td>
 											</tr>
 											<tr>
-												<td><img className="flag" src={kz} /> DK_1GE</td>
+												<td><img className="flag" src={kz} alt="kz" /> DK_1GE</td>
 												<td>5-20</td>
 												<td>0.26</td>
 												<td>idk</td>
@@ -139,7 +139,7 @@ function News() {
 									<table className="player-statistics">
 										<thead>
 											<tr>
-												<th><img className="flag" src={bg} /> FATE <strong className="won">16</strong></th>
+												<th><img className="flag" src={bg} alt="bg" /> FATE <strong className="won">16</strong></th>
 												<th>{t('news.kd')}</th>
 												<th>{t('news.kdRatio')}</th>
 												<th>{t('news.kr')}</th>
@@ -149,7 +149,7 @@ function News() {
 										</thead>
 										<tbody>
 											<tr>
-												<td><img className="flag" src={bg} /> Dupliacte</td>
+												<td><img className="flag" src={bg} alt="bg" /> Dupliacte</td>
 												<td>22-11</td>
 												<td>1.72</td>
 												<td>idk</td>
@@ -157,7 +157,7 @@ function News() {
 												<td>91</td>
 											</tr>
 											<tr>
-												<td><img className="flag" src={bg} /> Patrick</td>
+												<td><img className="flag" src={bg} alt="bg" /> Patrick</td>
 												<td>22-12</td>
 												<td>2.00</td>
 												<td>idk</td>
@@ -165,7 +165,7 @@ function News() {
 												<td>116</td>
 											</tr>
 											<tr>
-												<td><img className="flag" src={bg} /> doublemagic</td>
+												<td><img className="flag" src={bg} alt="bg" /> doublemagic</td>
 												<td>18-9</td>
 												<td>2.00</td>
 												<td>idk</td>
@@ -173,7 +173,7 @@ function News() {
 												<td>91</td>
 											</tr>
 											<tr>
-												<td><img className="flag" src={bg} /> Rainwaker</td>
+												<td><img className="flag" src={bg} alt="bg" /> Rainwaker</td>
 												<td>12-11</td>
 												<td>1.30</td>
 												<td>idk</td>
@@ -181,7 +181,7 @@ function News() {
 												<td>58</td>
 											</tr>
 											<tr>
-												<td><img className="flag" src={bg} /> sTeFFe2KkK8</td>
+												<td><img className="flag" src={bg} alt="bg" /> sTeFFe2KkK8</td>
 												<td>14-12</td>
 												<td>1.27</td>
 												<td>idk</td>

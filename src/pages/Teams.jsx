@@ -47,7 +47,7 @@ function Teams() {
 								<div className="dimmed-background" style={{ backgroundImage: `url(${teamBackgrounds[index]})` }}></div>
 								<div className="text">
 									<div>
-										<img src={teamLogos[index]} className="logo" />
+										<img src={teamLogos[index]} className="logo" alt="logo" />
 										<h1>{team.name}</h1>
 									</div>
 									<p style={{ paddingTop: '2rem' }}>{t(`teamsPage.${teamNames[index]}`)}</p>

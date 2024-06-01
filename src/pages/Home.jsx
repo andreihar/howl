@@ -34,19 +34,19 @@ function Home() {
 									<div className="sections__content">
 										<Link className="sections__item" to="/team/csgo">
 											<div className="sections__item__content">
-												<div className="sections__item__title"><img src={csgo} /></div>
+												<div className="sections__item__title"><img src={csgo} alt="CS:GO" /></div>
 												<div className="sections__item__subtitle">Counter Strike: Global Offensive</div>
 											</div>
 										</Link>
 										<Link className="sections__item" to="/team/osu">
 											<div className="sections__item__content">
-												<div className="sections__item__title"><img src={pubg} /></div>
+												<div className="sections__item__title"><img src={pubg} alt="osu!" /></div>
 												<div className="sections__item__subtitle">osu!</div>
 											</div>
 										</Link>
 										<Link className="sections__item" to="/team/csgoromcyk">
 											<div className="sections__item__content">
-												<div className="sections__item__title"><img src={csgo} /></div>
+												<div className="sections__item__title"><img src={csgo} alt="CS:GO" /></div>
 												<div className="sections__item__subtitle">Romčyk - Counter Strike: Global Offensive</div>
 											</div>
 										</Link>
