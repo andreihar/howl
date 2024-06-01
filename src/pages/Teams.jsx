@@ -1,8 +1,7 @@
-import { useState } from 'react';
-import { Link, useParams } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-import { Trans, useTranslation } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
 import { players as playerObjects } from '../assets/players';
 import { teams } from '../assets/teams';
 
@@ -11,11 +10,7 @@ import osu from '../assets/img/logos/osu-logo-small.png';
 import by from '../assets/img/flags/by.png';
 import kz from '../assets/img/flags/kz.png';
 import ru from '../assets/img/flags/ru.png';
-import cis from '../assets/img/flags/cis.png';
 import ua from '../assets/img/flags/ua.png';
-import ca from '../assets/img/flags/ca.png';
-import be from '../assets/img/flags/be.png';
-import eu from '../assets/img/flags/eu.png';
 
 function Teams() {
 	const { t } = useTranslation();

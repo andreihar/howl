@@ -1,4 +1,3 @@
-import React, { useState, useEffect } from 'react';
 import i18n from "../scripts/i18n";
 
 import logo from '../assets/img/logos/logo.png';

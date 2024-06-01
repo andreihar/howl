@@ -8,7 +8,6 @@ import ru from '../assets/img/flags/ru.png';
 import cis from '../assets/img/flags/cis.png';
 import ua from '../assets/img/flags/ua.png';
 import bg from '../assets/img/flags/bg.png';
-
 import eu from '../assets/img/flags/eu.png';
 
 function News() {

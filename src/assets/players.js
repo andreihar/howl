@@ -1,5 +1,3 @@
-import i18n from '../scripts/i18n';
-
 import bat from '../assets/img/players/bat.png';
 import bomb1la from '../assets/img/players/bomb1la.png';
 import bulhkin from '../assets/img/players/bulhkin.png';
@@ -326,4 +324,4 @@ export const players = [
 		},
 		crossHair: 'cl_crosshair_drawoutline "0"; cl_crosshair_dynamic_maxdist_splitratio "0.35"; cl_crosshair_dynamic_splitalpha_innermod "1"; cl_crosshair_dynamic_splitalpha_outermod "0.5"; cl_crosshair_dynamic_splitdist "7"; cl_crosshair_outlinethickness "1"; cl_crosshair_sniper_show_normal_inaccuracy "0"; cl_crosshair_sniper_width "1"; cl_crosshair_t "0"; cl_crosshairalpha "250"; cl_crosshaircolor "1"; cl_crosshaircolor_b "255"; cl_crosshaircolor_g "100"; cl_crosshaircolor_r "100"; cl_crosshairdot "0"; cl_crosshairgap "-0.5"; cl_crosshairgap_useweaponvalue "0"; cl_crosshairscale "4"; cl_crosshairsize "4"; cl_crosshairstyle "5"; cl_crosshairthickness "0"; cl_crosshairusealpha "1"; cl_fixedcrosshairgap "3";',
 	},
-];	
+];

@@ -105,4 +105,4 @@ export const teams = [
 		],
 		story: 'teams.csgoromcyk'
 	}
-];	
+];
