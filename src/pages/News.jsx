@@ -53,32 +53,11 @@ function News() {
 										</table>
 									</div>
 								</div>
-								<Trans i18nKey="news.text1" components={[
-									<img className="flag" src={by} alt="by" />,
-									<img className="flag" src={kz} alt="kz" />,
-									<img className="flag" src={ru} alt="ru" />,
-									<img className="flag" src={cis} alt="cis" />,
-									<img className="flag" src={ua} alt="ua" />,
-									<img className="flag" src={bg} alt="bg" />,
-								]} />
+								<Trans i18nKey="news.text1" components={[<img className="flag" src={by} alt="by" />, <img className="flag" src={kz} alt="kz" />, <img className="flag" src={ru} alt="ru" />, <img className="flag" src={cis} alt="cis" />, <img className="flag" src={ua} alt="ua" />, <img className="flag" src={bg} alt="bg" />,]} />
 								<p className="roaster-list">
-									<Trans i18nKey="news.text2" components={[
-										<img className="flag" src={by} alt="by" />,
-										<img className="flag" src={kz} alt="kz" />,
-										<img className="flag" src={ru} alt="ru" />,
-										<img className="flag" src={cis} alt="cis" />,
-										<img className="flag" src={ua} alt="ua" />,
-										<img className="flag" src={bg} alt="bg" />,
-									]} />
+									<Trans i18nKey="news.text2" components={[<img className="flag" src={by} alt="by" />, <img className="flag" src={kz} alt="kz" />, <img className="flag" src={ru} alt="ru" />, <img className="flag" src={cis} alt="cis" />, <img className="flag" src={ua} alt="ua" />, <img className="flag" src={bg} alt="bg" />,]} />
 								</p>
-								<Trans i18nKey="news.text3" components={[
-									<img className="flag" src={by} alt="by" />,
-									<img className="flag" src={kz} alt="kz" />,
-									<img className="flag" src={ru} alt="ru" />,
-									<img className="flag" src={cis} alt="cis" />,
-									<img className="flag" src={ua} alt="ua" />,
-									<img className="flag" src={bg} alt="bg" />,
-								]} />
+								<Trans i18nKey="news.text3" components={[<img className="flag" src={by} alt="by" />, <img className="flag" src={kz} alt="kz" />, <img className="flag" src={ru} alt="ru" />, <img className="flag" src={cis} alt="cis" />, <img className="flag" src={ua} alt="ua" />, <img className="flag" src={bg} alt="bg" />,]} />
 								<div className="description-one-news" style={{ padding: '1rem 0' }}>
 									<table className="player-statistics">
 										<caption>Overpass</caption>
@@ -191,14 +170,7 @@ function News() {
 										</tbody>
 									</table>
 								</div>
-								<Trans i18nKey="news.text4" components={[
-									<img className="flag" src={by} alt="by" />,
-									<img className="flag" src={kz} alt="kz" />,
-									<img className="flag" src={ru} alt="ru" />,
-									<img className="flag" src={cis} alt="cis" />,
-									<img className="flag" src={ua} alt="ua" />,
-									<img className="flag" src={bg} alt="bg" />,
-								]} />
+								<Trans i18nKey="news.text4" components={[<img className="flag" src={by} alt="by" />, <img className="flag" src={kz} alt="kz" />, <img className="flag" src={ru} alt="ru" />, <img className="flag" src={cis} alt="cis" />, <img className="flag" src={ua} alt="ua" />, <img className="flag" src={bg} alt="bg" />,]} />
 							</div>
 						</div>
 					</div>

@@ -199,11 +199,7 @@ function Team() {
 								<div className="container-list-staff page-black">
 									<ul className="list-staff">
 										{achievements.map((achievement, index) => (
-											<li
-												key={index}
-												style={{ backgroundImage: `url("${achievement.image}")` }}
-												className="active animate-player"
-											>
+											<li key={index} style={{ backgroundImage: `url("${achievement.image}")` }} className="active animate-player">
 												<div className="info-staff">
 													<div className="name-staff">
 														<strong lang='en'>{achievement.name}</strong>

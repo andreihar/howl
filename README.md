@@ -13,7 +13,7 @@
 [![Licence][licence-badge]][licence]
 [![LinkedIn][linkedin-badge]][linkedin]
 
-**A website for exploring details about an esports organization**
+**A website for exploring details about an esports organisation**
 
 A comprehensive platform for the esports team. This React-based application features detailed pages for teams, players, and matches, and includes i18n localisation.
 
@@ -124,7 +124,7 @@ The News Page provides an overview of a tournament and detailed descriptions of 
 
 ### Teams
 
-This Teams Page describes the three teams in the organization, providing links to the team pages and the profiles of the players.
+This Teams Page describes the three teams in the organisation, providing links to the team pages and the profiles of the players.
 
 <p align="center">
 <img src="readme/teams.jpg" alt="Teams" height="300">
@@ -135,7 +135,7 @@ This Teams Page describes the three teams in the organization, providing links t
 The Team Page provides comprehensive insights into each team, including player details, coaching staff, overall team information, global statistics, match records, achievements, and team history. To ensure efficient content management and prevent duplication, all team-related data is consolidated within a central file `teams.js`. This data is dynamically retrieved and presented on the corresponding team pages, ensuring consistency and ease of updates.
 
 <p align="center">
-<img src="readme/Team.jpg" alt="Team" height="300">
+<img src="readme/team.jpg" alt="Team" height="300">
 </p>
 
 #### Matches
