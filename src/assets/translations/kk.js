@@ -105,29 +105,29 @@ export const kk = {
 		teams: {
 			csgo: `<h2 class="section__title h4"><strong lang="en">Howl Gaming CS:GO</strong> Bastapqy Quramy</h2>
 			<div class="desc">
-			<p>2017 jyldyñ 7 tamyzynda, <2></2> <strong>RHB</strong> klany uıymnan şyğyp, özderiniñ täwelsiz komandasyn qurğan kezde, sol oıynşylar oınawdy jalğastyrdy.</p>
+			<p>2017 jyldyŋ 7 tamyzynda, <2></2> <strong>RHB</strong> klany uıymnan şyğyp, özderiniŋ täwelsiz komandasyn qurğan kezde, sol oıynşylar oınawdy jalğastyrdy.</p>
 				<p class="roaster-list">
 					<span class="section__subtitle"><span lang="en">HOWL Gaming CS:GO</span> August 2017 Lineup:</span>
 					<br><1></1> Batyr <strong>«Klaud»</strong> Kussain<br><2></2> Tikhon <strong>«GODEACH»</strong> Ogniev<br><2></2> Naran <strong>«DeeZiK»</strong> Manjiev<br><0></0> Andrei <strong>«Bulhkin»</strong> Harbachov<br><2></2> Ilya <strong>«SpirTi»</strong> Avdoshkin
 				</p>
-				<p>Jağymsyz nätıjelerge baılanysty <0></0> <strong>«Bulhkin»</strong> jäne <2></2> <strong>«GODEACH»</strong> negizgi komandadan şyğaryldy 2018 jyldyñ aqpan aıynyñ soñy. Olardy wkraın komandalarynyñ müşesi <4></4> <strong>Phantom</strong> <4></4> Bodhan <strong>«Young»</strong> jäne burynğy CS:GO oıynşysy <2></2> <strong>RHB</strong> <2></2> Daniil <strong>«Nosferatu»</strong> Bykov awystyrdy, onyñ orny 5 künnen keıin bolady Yegor <strong>«SeramisV»</strong> Lavrentiev. Sol küni <4></4> Volodimir <strong>«batmessiah»</strong> Sokolük uıymğa top menejeri retinde qosylady.</p><p>12 aqpan <2></2> Ilya <strong>«SpirTi»</strong> Avdoshkin jäne <2></2> <strong>«SeramisV»</strong> komandadan ketedi, alaıda nawryz aıynda Rwz oıynşysy komandağa oraldy, al <2></2> Ivan <strong>«Konung»</strong> Filipov bos oryndy alady.</p><p>6 säwirde komanda rMatrixCUP#21 twrnırine qatysady, jäne 8 künnen keıin naşar öner körsetkennen keıin <1></1> <strong>«Klaud»</strong> komandadan ketetinin habarlaıdy, osylaışa qalğan oıynşylar äreketsiz qalady.</p>
+				<p>Jağymsyz nätıjelerge baılanysty <0></0> <strong>«Bulhkin»</strong> jäne <2></2> <strong>«GODEACH»</strong> negizgi komandadan şyğaryldy 2018 jyldyŋ aqpan aıynyŋ soŋy. Olardy wkraın komandalarynyŋ müşesi <4></4> <strong>Phantom</strong> <4></4> Bodhan <strong>«Young»</strong> jäne burynğy CS:GO oıynşysy <2></2> <strong>RHB</strong> <2></2> Daniil <strong>«Nosferatu»</strong> Bykov awystyrdy, onyŋ orny 5 künnen keıin bolady Yegor <strong>«SeramisV»</strong> Lavrentiev. Sol küni <4></4> Volodimir <strong>«batmessiah»</strong> Sokolük uıymğa top menejeri retinde qosylady.</p><p>12 aqpan <2></2> Ilya <strong>«SpirTi»</strong> Avdoshkin jäne <2></2> <strong>«SeramisV»</strong> komandadan ketedi, alaıda nawryz aıynda Rwz oıynşysy komandağa oraldy, al <2></2> Ivan <strong>«Konung»</strong> Filipov bos oryndy alady.</p><p>6 säwirde komanda rMatrixCUP#21 twrnırine qatysady, jäne 8 künnen keıin naşar öner körsetkennen keıin <1></1> <strong>«Klaud»</strong> komandadan ketetinin habarlaıdy, osylaışa qalğan oıynşylar äreketsiz qalady.</p>
 			</div>`,
 			csgoromcyk: `<h2 class="section__title h4"><strong>Team Belarus</strong></h2>
 			<div class="desc">
-				<p>2019 jyldyñ 3 şildesinde ärtürli komandalardyñ burynğy oıynşylary Belarüs awmağynda eñ jaqsy komanda qurw twraly şeşim qabyldağan kezde Romčyk - TB (Team Belarus) komandasynyñ alğaşqy prototıpi jınaldy. Alğaşqy synaqtardan keıin kompozısıa tolyğymen Belarüs komandasyn qurap, küşine endi.</p>
+				<p>2019 jyldyŋ 3 şildesinde ärtürli komandalardyŋ burynğy oıynşylary Belarüs awmağynda eŋ jaqsy komanda qurw twraly şeşim qabyldağan kezde Romčyk - TB (Team Belarus) komandasynyŋ alğaşqy prototıpi jınaldy. Alğaşqy synaqtardan keıin kompozısıa tolyğymen Belarüs komandasyn qurap, küşine endi.</p>
 				<p class="roaster-list">
-					<span class="section__subtitle">2019 jyldyñ şilde aıyndağy TB quramy:</span>
+					<span class="section__subtitle">2019 jyldyŋ şilde aıyndağy TB quramy:</span>
 					<br><0></0> Andrei <strong>«Bulhkin»</strong> Harbachov<br><0></0> Uładzisłau <strong>«Wiedy Mi»</strong> Lićvin<br><0></0> Maciej <strong> «MattJerr»</strong> Ściešyc<br><0></0> Uładzimier <strong>«Kvadrat»</strong> Hierasimienka<br><0></0> <strong>«zigert»</strong>
 				</p>
 				<p>Alaıda naşar nätıjelerge baılanysty komanda tez ydyrap, teg tez umytylady. Oıynşylar käsipqoı kıbersportty qaldyryp, belsendi emes bolady.</p>
 			</div>
 			<h2 class="section__title h4"><strong>Romčyk.CSGO</strong></h2>
 			<div class="desc">
-				<p>Sonymen birge <0></0> <strong>«jełdzinski»</strong>, <0></0> <strong>TB</strong>den orynğa burynğy ümitker, ol sodan keıin <strong>rabcau</strong> laqap atymen belgili, öz komandasyn qurady jäne <0></0> <strong>«Bulhkin»</strong>ke qosylwdy suraıdy.</p><p>Jaqynda mergen <0></0> <strong>TB</strong> <0></0> <strong>\"Wiedy Mi\"</strong> komandağa qosylyp, komanda Belarüs sahnasynda jetekşi oryndardy ıelene bastaıdy.</p><p>Biraq jeñis uzaqqa sozylmady. Biraz waqyttan keıin köptegen oıynşylar komandadan oqw, jumys jäne basqa faktorlardan ketwge mäjbür boldy.</p>
+				<p>Sonymen birge <0></0> <strong>«jełdzinski»</strong>, <0></0> <strong>TB</strong>den orynğa burynğy ümitker, ol sodan keıin <strong>rabcau</strong> laqap atymen belgili, öz komandasyn qurady jäne <0></0> <strong>«Bulhkin»</strong>ke qosylwdy suraıdy.</p><p>Jaqynda mergen <0></0> <strong>TB</strong> <0></0> <strong>\"Wiedy Mi\"</strong> komandağa qosylyp, komanda Belarüs sahnasynda jetekşi oryndardy ıelene bastaıdy.</p><p>Biraq jeŋis uzaqqa sozylmady. Biraz waqyttan keıin köptegen oıynşylar komandadan oqw, jumys jäne basqa faktorlardan ketwge mäjbür boldy.</p>
 			</div>
-			<h2 class="section__title h4">Jaña Däwir</h2>
+			<h2 class="section__title h4">Jaŋa Däwir</h2>
 			<div class="desc">
-				<p>2020 jyldyñ 19 qañtarynda komanda şaıqasqa qaıtady. Jaña atawdy tañdaı otyryp, biraq süıekti saqtaı otyryp, komanda quramyn jaña oıynşylarmen nyğaıtty, aty añyzğa aınalğan oıynşyny jäne qazir <0></0> <strong>«Bomb1la»</strong> jattyqtyrwşysy alw arqyly taktıkalyq älewetiñizdi arttyrdy, endi jaña jeñisterge barwğa daıyn!</p>
+				<p>2020 jyldyŋ 19 qaŋtarynda komanda şaıqasqa qaıtady. Jaŋa atawdy taŋdaı otyryp, biraq süıekti saqtaı otyryp, komanda quramyn jaŋa oıynşylarmen nyğaıtty, aty aŋyzğa aınalğan oıynşyny jäne qazir <0></0> <strong>«Bomb1la»</strong> jattyqtyrwşysy alw arqyly taktıkalyq älewetiŋizdi arttyrdy, endi jaŋa jeŋisterge barwğa daıyn!</p>
 			</div>
 			`
 		},
