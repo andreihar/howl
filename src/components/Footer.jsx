@@ -31,7 +31,7 @@ function Footer() {
 				<div className="box-footer">
 					<div className="container">
 						<div className="content-footer">
-							<img src={logo} />
+							<img src={logo} alt="HOWL Gaming Logo" />
 							<div className="social-footer">
 								<ul className="social-menu">
 									<li className="social-menu-item">

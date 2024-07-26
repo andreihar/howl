@@ -143,14 +143,14 @@ function Navbar() {
 							<ul className="main-menu">
 								<li className="lang">
 									<button style={{ display: 'flex', alignItems: 'center', background: 'none', border: 'none', cursor: 'pointer', padding: 0 }}>
-										<img className="flag" src={languageFlags[currentLanguage]} style={{ marginRight: '4px' }} alt={currentLanguage} />
+										<img className="flag" src={languageFlags[currentLanguage]} style={{ marginRight: '4px' }} alt={`Flag representing language ${currentLanguage}`} loading="lazy" />
 										{currentLanguage === 'be-Latn' ? 'be' : currentLanguage}
 									</button>
 									<ul>
 										{otherLanguages.map((lng) => (
 											<li key={lng}>
 												<button onClick={() => changeLanguage(lng)} style={{ display: 'flex', alignItems: 'center', background: 'none', border: 'none', cursor: 'pointer' }}>
-													<img className="flag" src={languageFlags[lng]} style={{ marginRight: '4px' }} alt={lng} />
+													<img className="flag" src={languageFlags[lng]} style={{ marginRight: '4px' }} alt={`Flag representing language ${lng}`} loading="lazy" />
 													{lng}
 												</button>
 											</li>

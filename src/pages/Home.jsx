@@ -40,7 +40,7 @@ function Home() {
 										</Link>
 										<Link className="sections__item" to="/team/osu">
 											<div className="sections__item__content">
-												<div className="sections__item__title"><img src={pubg} alt="osu!" /></div>
+												<div className="sections__item__title"><img src={pubg} alt="Osu" /></div>
 												<div className="sections__item__subtitle">osu!</div>
 											</div>
 										</Link>

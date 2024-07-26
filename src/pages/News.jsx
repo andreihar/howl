@@ -42,7 +42,7 @@ function News() {
 												<tr><td><strong>{t('team.achievements.type')}:</strong> Online</td></tr>
 												<tr>
 													<td>
-														<strong>{t('team.achievements.location')}:</strong> <img className="flag" style={{ marginRight: '4px' }} src={eu} alt="eu" />{t('countries.eu')}
+														<strong>{t('team.achievements.location')}:</strong> <img className="flag" style={{ marginRight: '4px' }} src={eu} alt="eu" loading="lazy" />{t('countries.eu')}
 													</td>
 												</tr>
 												<tr><td><strong>{t('team.achievements.numOfTeams')}:</strong> 32</td></tr>
@@ -53,17 +53,17 @@ function News() {
 										</table>
 									</div>
 								</div>
-								<Trans i18nKey="news.text1" components={[<img className="flag" src={by} alt="by" />, <img className="flag" src={kz} alt="kz" />, <img className="flag" src={ru} alt="ru" />, <img className="flag" src={cis} alt="cis" />, <img className="flag" src={ua} alt="ua" />, <img className="flag" src={bg} alt="bg" />,]} />
+								<Trans i18nKey="news.text1" components={[<img className="flag" src={by} alt="by" loading="lazy" />, <img className="flag" src={kz} alt="kz" loading="lazy" />, <img className="flag" src={ru} alt="ru" loading="lazy" />, <img className="flag" src={cis} alt="cis" loading="lazy" />, <img className="flag" src={ua} alt="ua" loading="lazy" />, <img className="flag" src={bg} alt="bg" loading="lazy" />,]} />
 								<p className="roaster-list">
-									<Trans i18nKey="news.text2" components={[<img className="flag" src={by} alt="by" />, <img className="flag" src={kz} alt="kz" />, <img className="flag" src={ru} alt="ru" />, <img className="flag" src={cis} alt="cis" />, <img className="flag" src={ua} alt="ua" />, <img className="flag" src={bg} alt="bg" />,]} />
+									<Trans i18nKey="news.text2" components={[<img className="flag" src={by} alt="by" loading="lazy" />, <img className="flag" src={kz} alt="kz" loading="lazy" />, <img className="flag" src={ru} alt="ru" loading="lazy" />, <img className="flag" src={cis} alt="cis" loading="lazy" />, <img className="flag" src={ua} alt="ua" loading="lazy" />, <img className="flag" src={bg} alt="bg" loading="lazy" />,]} />
 								</p>
-								<Trans i18nKey="news.text3" components={[<img className="flag" src={by} alt="by" />, <img className="flag" src={kz} alt="kz" />, <img className="flag" src={ru} alt="ru" />, <img className="flag" src={cis} alt="cis" />, <img className="flag" src={ua} alt="ua" />, <img className="flag" src={bg} alt="bg" />,]} />
+								<Trans i18nKey="news.text3" components={[<img className="flag" src={by} alt="by" loading="lazy" />, <img className="flag" src={kz} alt="kz" loading="lazy" />, <img className="flag" src={ru} alt="ru" loading="lazy" />, <img className="flag" src={cis} alt="cis" loading="lazy" />, <img className="flag" src={ua} alt="ua" loading="lazy" />, <img className="flag" src={bg} alt="bg" loading="lazy" />,]} />
 								<div className="description-one-news" style={{ padding: '1rem 0' }}>
 									<table className="player-statistics">
 										<caption>Overpass</caption>
 										<thead>
 											<tr>
-												<th><img className="flag" src={cis} alt="cis" /> Howl Gaming <strong>4</strong></th>
+												<th><img className="flag" src={cis} alt="cis" loading="lazy" /> Howl Gaming <strong>4</strong></th>
 												<th>{t('news.kd')}</th>
 												<th>{t('news.kdRatio')}</th>
 												<th>{t('news.kr')}</th>
@@ -73,7 +73,7 @@ function News() {
 										</thead>
 										<tbody>
 											<tr>
-												<td><img className="flag" src={kz} alt="kz" /> KLDS</td>
+												<td><img className="flag" src={kz} alt="kz" loading="lazy" /> KLDS</td>
 												<td>24-16</td>
 												<td>1.6</td>
 												<td>idk</td>
@@ -81,7 +81,7 @@ function News() {
 												<td>123</td>
 											</tr>
 											<tr>
-												<td><img className="flag" src={by} alt="by" /> Bulhkin</td>
+												<td><img className="flag" src={by} alt="by" loading="lazy" /> Bulhkin</td>
 												<td>9-18</td>
 												<td>0.47</td>
 												<td>idk</td>
@@ -89,7 +89,7 @@ function News() {
 												<td>46</td>
 											</tr>
 											<tr>
-												<td><img className="flag" src={ru} alt="ru" /> DeeZiK</td>
+												<td><img className="flag" src={ru} alt="ru" loading="lazy" /> DeeZiK</td>
 												<td>8-17</td>
 												<td>0.41</td>
 												<td>idk</td>
@@ -97,7 +97,7 @@ function News() {
 												<td>55</td>
 											</tr>
 											<tr>
-												<td><img className="flag" src={ua} alt="ua" /> bat</td>
+												<td><img className="flag" src={ua} alt="ua" loading="lazy" /> bat</td>
 												<td>7-19</td>
 												<td>0.38</td>
 												<td>idk</td>
@@ -105,7 +105,7 @@ function News() {
 												<td>40</td>
 											</tr>
 											<tr>
-												<td><img className="flag" src={kz} alt="kz" /> DK_1GE</td>
+												<td><img className="flag" src={kz} alt="kz" loading="lazy" /> DK_1GE</td>
 												<td>5-20</td>
 												<td>0.26</td>
 												<td>idk</td>
@@ -118,7 +118,7 @@ function News() {
 									<table className="player-statistics">
 										<thead>
 											<tr>
-												<th><img className="flag" src={bg} alt="bg" /> FATE <strong className="won">16</strong></th>
+												<th><img className="flag" src={bg} alt="bg" loading="lazy" /> FATE <strong className="won">16</strong></th>
 												<th>{t('news.kd')}</th>
 												<th>{t('news.kdRatio')}</th>
 												<th>{t('news.kr')}</th>
@@ -128,7 +128,7 @@ function News() {
 										</thead>
 										<tbody>
 											<tr>
-												<td><img className="flag" src={bg} alt="bg" /> Dupliacte</td>
+												<td><img className="flag" src={bg} alt="bg" loading="lazy" /> Dupliacte</td>
 												<td>22-11</td>
 												<td>1.72</td>
 												<td>idk</td>
@@ -136,7 +136,7 @@ function News() {
 												<td>91</td>
 											</tr>
 											<tr>
-												<td><img className="flag" src={bg} alt="bg" /> Patrick</td>
+												<td><img className="flag" src={bg} alt="bg" loading="lazy" /> Patrick</td>
 												<td>22-12</td>
 												<td>2.00</td>
 												<td>idk</td>
@@ -144,7 +144,7 @@ function News() {
 												<td>116</td>
 											</tr>
 											<tr>
-												<td><img className="flag" src={bg} alt="bg" /> doublemagic</td>
+												<td><img className="flag" src={bg} alt="bg" loading="lazy" /> doublemagic</td>
 												<td>18-9</td>
 												<td>2.00</td>
 												<td>idk</td>
@@ -152,7 +152,7 @@ function News() {
 												<td>91</td>
 											</tr>
 											<tr>
-												<td><img className="flag" src={bg} alt="bg" /> Rainwaker</td>
+												<td><img className="flag" src={bg} alt="bg" loading="lazy" /> Rainwaker</td>
 												<td>12-11</td>
 												<td>1.30</td>
 												<td>idk</td>
@@ -160,7 +160,7 @@ function News() {
 												<td>58</td>
 											</tr>
 											<tr>
-												<td><img className="flag" src={bg} alt="bg" /> sTeFFe2KkK8</td>
+												<td><img className="flag" src={bg} alt="bg" loading="lazy" /> sTeFFe2KkK8</td>
 												<td>14-12</td>
 												<td>1.27</td>
 												<td>idk</td>
@@ -170,7 +170,7 @@ function News() {
 										</tbody>
 									</table>
 								</div>
-								<Trans i18nKey="news.text4" components={[<img className="flag" src={by} alt="by" />, <img className="flag" src={kz} alt="kz" />, <img className="flag" src={ru} alt="ru" />, <img className="flag" src={cis} alt="cis" />, <img className="flag" src={ua} alt="ua" />, <img className="flag" src={bg} alt="bg" />,]} />
+								<Trans i18nKey="news.text4" components={[<img className="flag" src={by} alt="by" loading="lazy" />, <img className="flag" src={kz} alt="kz" loading="lazy" />, <img className="flag" src={ru} alt="ru" loading="lazy" />, <img className="flag" src={cis} alt="cis" loading="lazy" />, <img className="flag" src={ua} alt="ua" loading="lazy" />, <img className="flag" src={bg} alt="bg" loading="lazy" />,]} />
 							</div>
 						</div>
 					</div>

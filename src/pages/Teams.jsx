@@ -57,7 +57,7 @@ function Teams() {
 										{teamMembers.map((player) => (
 											<React.Fragment key={player.gamerTag}>
 												<Link to={`../player/${player.gamerTag}`}>
-													<img className="flag" src={flagImages[player.country]} alt={player.country} />{" "}
+													<img className="flag" src={flagImages[player.country]} alt={player.country} loading="lazy" />{" "}
 													{t(player.firstName)} <strong>«{player.gamerTag}»</strong> {t(player.lastName)}
 												</Link>
 												<br />

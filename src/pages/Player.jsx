@@ -60,7 +60,7 @@ function Player() {
 								<div className="player-info">
 									<div>
 										<span className="player-info-cat">{t('player.country')}: </span>
-										<span className="player-info-text"><img className="flag" style={{ marginRight: '4px' }} src={flagImages[country]} alt={country} />{t(`countries.${country}`)}</span>
+										<span className="player-info-text"><img className="flag" style={{ marginRight: '4px' }} src={flagImages[country]} alt={country} loading="lazy" />{t(`countries.${country}`)}</span>
 									</div>
 									<div>
 										<span className="player-info-cat">{t('player.age')}: </span>
@@ -140,7 +140,7 @@ function Player() {
 						<div className={`${activeTab === 1 ? 'active' : 'selector-sect'} section-half js-sameheight`}>
 							<h2 className="section__title h4">CS:GO <strong lang='en'>{gamerTag}</strong></h2>
 							<div className="desc">
-								<Trans i18nKey={story} components={[<img className="flag" src={by} alt="by" />, <img className="flag" src={kz} alt="kz" />, <img className="flag" src={ru} alt="ru" />, <img className="flag" src={cis} alt="cis" />, <img className="flag" src={ua} alt="ua" />]} />
+								<Trans i18nKey={story} components={[<img className="flag" src={by} alt="by" loading="lazy" />, <img className="flag" src={kz} alt="kz" loading="lazy" />, <img className="flag" src={ru} alt="ru" loading="lazy" />, <img className="flag" src={cis} alt="cis" loading="lazy" />, <img className="flag" src={ua} alt="ua" loading="lazy" />]} />
 							</div>
 							<h2 className="section__title h4">
 								<Trans i18nKey="player.about.highlights" values={{ name: t(gamerTagGen) }} />
@@ -281,7 +281,7 @@ function Player() {
 													</div>
 													<div className="location-staff">
 														<strong>{t('team.achievements.location')}:</strong>{" "}
-														<img className="flag" style={{ marginRight: '4px' }} src={flagImages[achievement.country]} alt={achievement.country} />{achievement.location}
+														<img className="flag" style={{ marginRight: '4px' }} src={flagImages[achievement.country]} alt={achievement.country} loading="lazy" />{achievement.location}
 													</div>
 													<div className="location-staff">
 														<strong>{t('team.achievements.numOfTeams')}:</strong> {achievement.numberOfTeams}

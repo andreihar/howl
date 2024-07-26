@@ -212,7 +212,7 @@ function Team() {
 													</div>
 													<div className="location-staff">
 														<strong>{t('team.achievements.location')}:</strong>{" "}
-														<img className="flag" style={{ marginRight: '4px' }} src={flagImages[achievement.country]} alt={achievement.country} />{achievement.location}
+														<img className="flag" style={{ marginRight: '4px' }} src={flagImages[achievement.country]} alt={achievement.country} loading="lazy" />{achievement.location}
 													</div>
 													<div className="location-staff">
 														<strong>{t('team.achievements.numOfTeams')}:</strong> {achievement.numberOfTeams}
