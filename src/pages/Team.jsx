@@ -52,7 +52,7 @@ function Team() {
 				<section className="section team-background csgo-background">
 					<div className="row">
 						{teamPlayers.map(player => (
-							<Link to={`/player/${player.gamerTag}`}>
+							<Link to={`/player/${player.gamerTag}`} key={player.gamerTag}>
 								<img src={player.image} alt={`${player.firstName} ${player.lastName}`} />
 							</Link>
 						))}
@@ -177,7 +177,7 @@ function Team() {
 							<div className="desc">
 								<div className="headofteam">
 									{teamLeaders.map(leader => (
-										<div className="box-head">
+										<div key={leader.gamerTag} className="box-head">
 											<Link to={`/player/${leader.gamerTag}`}>
 												<img src={leader.image} alt={`${t(leader.firstName)} ${t(leader.lastName)}`} />
 												<div className="name">

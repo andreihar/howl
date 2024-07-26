@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import i18n from "../scripts/i18n";
 
+import logo from '../assets/img/logos/logo.png';
 import uk from "../assets/img/flags/uk.png";
 import by from "../assets/img/flags/by.png";
 import kz from "../assets/img/flags/kz.png";
@@ -98,7 +99,10 @@ function Navbar() {
 			<header id="header" ref={headerRef}>
 				<div className="container">
 					<div className="top">
-						<Link to="/" className="top-logo" title="HOWL Gaming"></Link>
+						{/* <Link to="/" className="top-logo" title="HOWL Gaming"></Link> */}
+						<Link to="/" className="top-logo" title="HOWL Gaming">
+							<img src={logo} alt="HOWL Gaming Logo" width="100%" height="100%" style={{ objectFit: 'cover' }} className="logo-img" />
+						</Link>
 						<nav className="top-nav">
 							<ul className="main-menu">
 								<li><Link to={`/news`}>{t('navbar.news')}</Link></li>
@@ -138,17 +142,17 @@ function Navbar() {
 						<nav className="top-nav-lang">
 							<ul className="main-menu">
 								<li className="lang">
-									<a style={{ display: 'flex', alignItems: 'center' }}>
-										<img className="flag" src={languageFlags[currentLanguage]} style={{ marginRight: '4px' }} alt={`Flag representing ${currentLanguage} language`} />
+									<button style={{ display: 'flex', alignItems: 'center', background: 'none', border: 'none', cursor: 'pointer', padding: 0 }}>
+										<img className="flag" src={languageFlags[currentLanguage]} style={{ marginRight: '4px' }} alt={currentLanguage} />
 										{currentLanguage === 'be-Latn' ? 'be' : currentLanguage}
-									</a>
+									</button>
 									<ul>
 										{otherLanguages.map((lng) => (
 											<li key={lng}>
-												<a onClick={() => changeLanguage(lng)} style={{ display: 'flex', alignItems: 'center' }}>
+												<button onClick={() => changeLanguage(lng)} style={{ display: 'flex', alignItems: 'center', background: 'none', border: 'none', cursor: 'pointer' }}>
 													<img className="flag" src={languageFlags[lng]} style={{ marginRight: '4px' }} alt={lng} />
 													{lng}
-												</a>
+												</button>
 											</li>
 										))}
 									</ul>

@@ -1,3 +1,4 @@
+import React from 'react';
 import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
@@ -43,7 +44,7 @@ function Teams() {
 							)
 						];
 						return (
-							<div className="discipline">
+							<div className="discipline" key={teamName}>
 								<div className="dimmed-background" style={{ backgroundImage: `url(${teamBackgrounds[index]})` }}></div>
 								<div className="text">
 									<div>
@@ -54,13 +55,13 @@ function Teams() {
 									<p className="roaster-list">
 										<br />
 										{teamMembers.map((player) => (
-											<>
+											<React.Fragment key={player.gamerTag}>
 												<Link to={`../player/${player.gamerTag}`}>
 													<img className="flag" src={flagImages[player.country]} alt={player.country} />{" "}
 													{t(player.firstName)} <strong>«{player.gamerTag}»</strong> {t(player.lastName)}
 												</Link>
 												<br />
-											</>
+											</React.Fragment>
 										))}
 										<br />
 									</p>

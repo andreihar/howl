@@ -1,3 +1,6 @@
 {
-	"rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
+    "routes": [
+        { "src": "/robots.txt", "dest": "/robots.txt" },
+        { "src": "/(.*)", "dest": "/index.html" }
+    ]
 }
