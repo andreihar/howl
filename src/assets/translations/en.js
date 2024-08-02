@@ -103,7 +103,7 @@ export const en = {
 			},
 		},
 		teams: {
-			csgo: `<h2 class="section__title h4">The Original Lineup of <strong>Howl Gaming</strong></h2>
+			csgo: `<h2 class="section__title h4">The Original Lineup of <strong>HOWL Gaming</strong></h2>
 			<div class="desc">
 			<p>On August 7, 2017, when the <2></2> <strong>RHB</strong> clan left the organisation and created their own independent team, for which the same players continued to play.</p>
 				<p class="roaster-list">

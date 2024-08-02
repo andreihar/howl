@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { Trans, useTranslation } from 'react-i18next';
+import { Helmet } from 'react-helmet';
 import { players } from '../assets/players';
 import { teams } from '../assets/teams';
 
@@ -43,6 +44,10 @@ function Player() {
 
 	return (
 		<>
+			<Helmet>
+				<title>{gamerTag} | HOWL Gaming</title>
+				<meta name="description" content={`Profile of ${gamerTag}, a player of our HOWL Gaming team. Learn about their background, achievements, and gaming setup.`} />
+			</Helmet>
 			<Navbar />
 			<div className="main-container">
 				<section className="section team-background csgo-background">

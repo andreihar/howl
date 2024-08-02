@@ -3,6 +3,7 @@ import { Link, useParams } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { Trans, useTranslation } from 'react-i18next';
+import { Helmet } from 'react-helmet';
 import { players as playerObjects } from '../assets/players';
 import { teams } from '../assets/teams';
 
@@ -47,6 +48,10 @@ function Team() {
 
 	return (
 		<>
+			<Helmet>
+				<title>{name} | HOWL Gaming</title>
+				<meta name="description" content={`Meet the HOWL Gaming ${name} squad. Learn about our history, current players, and achievements in the gaming world.`} />
+			</Helmet>
 			<Navbar />
 			<div className="main-container">
 				<section className="section team-background csgo-background">
@@ -127,8 +132,8 @@ function Team() {
 													<span>{match.date}</span>
 												</div>
 												<div className="match-scores">
-													<div className="nip">
-														<img src={logo} alt="Howl" />
+													<div className="howl">
+														<img src={logo} alt="HOWL Gaming" />
 													</div>
 													<div className="vs">vs</div>
 													<div className="opponent">
@@ -150,8 +155,8 @@ function Team() {
 										</div>
 										{matches.map((match, index) => !match.date && (
 											<div key={index} className="result">
-												<div className="nip">
-													<img src={logo} alt="Howl" />
+												<div className="howl">
+													<img src={logo} alt="HOWL Gaming" />
 												</div>
 												<div className={`score ${match.us > match.they ? 'win' : 'loss'}`}>{match.us}</div>
 												<div className="vs">vs</div>

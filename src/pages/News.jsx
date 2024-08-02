@@ -1,6 +1,7 @@
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { Trans, useTranslation } from 'react-i18next';
+import { Helmet } from 'react-helmet';
 
 import by from '../assets/img/flags/by.png';
 import kz from '../assets/img/flags/kz.png';
@@ -15,13 +16,17 @@ function News() {
 
 	return (
 		<>
+			<Helmet>
+				<title>News - 5K by Challengermode | HOWL Gaming</title>
+				<meta name="description" content="Our HOWL Gaming CS:GO squad took on the European teams in the 5K by Challengermode tournament!" />
+			</Helmet>
 			<Navbar />
 			<div className="main-container">
 				<section className="section team-background csgo-background">
 					<div className="article-title">
 						<h1>5K - by Challengermode</h1>
 						<p>
-							{t('news.reports')} <strong>/</strong> <span lang='en'>Howl Gaming</span>
+							{t('news.reports')} <strong>/</strong> <span lang='en'>HOWL Gaming</span>
 						</p>
 					</div>
 				</section>
@@ -63,7 +68,7 @@ function News() {
 										<caption>Overpass</caption>
 										<thead>
 											<tr>
-												<th><img className="flag" src={cis} alt="cis" loading="lazy" /> Howl Gaming <strong>4</strong></th>
+												<th><img className="flag" src={cis} alt="cis" loading="lazy" /> HOWL Gaming <strong>4</strong></th>
 												<th>{t('news.kd')}</th>
 												<th>{t('news.kdRatio')}</th>
 												<th>{t('news.kr')}</th>

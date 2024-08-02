@@ -103,7 +103,7 @@ export const be = {
 			},
 		},
 		teams: {
-			csgo: `<h2 class="section__title h4">Арыґінальны склад <strong>Howl Gaming</strong></h2>
+			csgo: `<h2 class="section__title h4">Арыґінальны склад <strong>HOWL Gaming</strong></h2>
 			<div class="desc">
 			<p>7 жніўня 2017 року, калі склад кляну <2></2> <strong>RHB</strong> пакідае арґанізацыю ды стварае ўласную незалежную каманду, за якую працягвалі выступаць тыя ж самыя гульцы.</p>
 				<p class="roaster-list">

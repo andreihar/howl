@@ -103,7 +103,7 @@ export const kk = {
 			},
 		},
 		teams: {
-			csgo: `<h2 class="section__title h4"><strong lang="en">Howl Gaming CS:GO</strong> Bastapqy Quramy</h2>
+			csgo: `<h2 class="section__title h4"><strong lang="en">HOWL Gaming CS:GO</strong> Bastapqy Quramy</h2>
 			<div class="desc">
 			<p>2017 jyldyŋ 7 tamyzynda, <2></2> <strong>RHB</strong> klany uıymnan şyğyp, özderiniŋ täwelsiz komandasyn qurğan kezde, sol oıynşylar oınawdy jalğastyrdy.</p>
 				<p class="roaster-list">

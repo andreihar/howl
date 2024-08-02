@@ -159,9 +159,9 @@ function Navbar() {
 								</li>
 								{i18n.language.startsWith('be') && (
 									<li style={{ display: 'flex' }}>
-										<a onClick={() => changeMode('Кір')}>Кір</a>
+										<a onClick={() => changeMode('Кір')} style={{ cursor: 'pointer' }}>Кір</a>
 										<span style={{ color: 'white' }}>|</span>
-										<a onClick={() => changeMode('Lac')}>Lac</a>
+										<a onClick={() => changeMode('Lac')} style={{ cursor: 'pointer' }}>Lac</a>
 									</li>
 								)}
 							</ul>

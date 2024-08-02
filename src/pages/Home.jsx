@@ -2,6 +2,7 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import { Helmet } from 'react-helmet';
 
 import background from '../assets/img/backgrounds/games-background.jpg';
 import csgo from '../assets/img/logos/csgo-red.png';
@@ -12,6 +13,10 @@ function Home() {
 
 	return (
 		<>
+			<Helmet>
+				<title>HOWL Gaming</title>
+				<meta name="description" content="Welcome to the official website of HOWL Gaming, a professional esports team. Stay updated with our latest matches, achievements, and news. Join the pack today!"></meta>
+			</Helmet>
 			<Navbar />
 			<div className="home-page">
 				<div className="main">
@@ -20,7 +25,7 @@ function Home() {
 							<div className="header__wrapper__inner">
 								<div className="header__content col-8">
 									<div className="header__content__header">
-										Web <strong>Howl Gaming</strong> {t('home.open')}!
+										Web <strong>HOWL Gaming</strong> {t('home.open')}!
 									</div>
 									<div className="header__content__text">{t('home.text')}</div>
 								</div>

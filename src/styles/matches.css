@@ -102,7 +102,7 @@
     justify-content: space-between;
     margin-top: 1.5rem;
 }
-.recent--results .match-scores .nip, .recent--results .match-scores .opponent {
+.recent--results .match-scores .howl, .recent--results .match-scores .opponent {
     width: 80px;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
@@ -115,7 +115,7 @@
     display: -ms-flexbox;
     display: flex;
 }
-.recent--results .match-scores .nip svg, .recent--results .match-scores .nip img, .recent--results .match-scores .opponent svg, .recent--results .match-scores .opponent img {
+.recent--results .match-scores .howl svg, .recent--results .match-scores .howl img, .recent--results .match-scores .opponent svg, .recent--results .match-scores .opponent img {
     width: auto;
     max-width: 100%;
     height: auto;
@@ -168,10 +168,10 @@
 .recent--results .result:nth-child(even) {
     background: #282828;
 }
-.recent--results .result > div.nip {
+.recent--results .result > div.howl {
     max-width: 32px;
 }
-.recent--results .result > div.nip svg, .recent--results .result > div.nip img {
+.recent--results .result > div.howl svg, .recent--results .result > div.howl img {
     width: 20px;
     height: auto;
     vertical-align: middle;

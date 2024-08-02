@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { useTranslation } from 'react-i18next';
+import { Helmet } from 'react-helmet';
 import { players as playerObjects } from '../assets/players';
 import { teams } from '../assets/teams';
 
@@ -24,13 +25,17 @@ function Teams() {
 
 	return (
 		<>
+			<Helmet>
+				<title>Teams | HOWL Gaming</title>
+				<meta name="description" content="Discover the teams of HOWL Gaming. Explore our CS:GO, osu!, and other squads, meet the players, and learn about their achievements and history in the competitive gaming scene." />
+			</Helmet>
 			<Navbar />
 			<div>
 				<div className="main-container">
 					<section className="section team-background games-background">
 						<div className="article-title">
 							<h1>{t('teamsPage.label')}</h1>
-							<p lang='en'>Howl Gaming</p>
+							<p lang='en'>HOWL Gaming</p>
 						</div>
 					</section>
 					{teamNames.map((teamName, index) => {
