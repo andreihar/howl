@@ -4,7 +4,7 @@ import ldlc from '../assets/img/logos/ldlc.svg';
 export const teams = [
 	{
 		teamTag: "csgo",
-		name: "HOWL Gaming CSGO",
+		name: "CSGO",
 		country: "cis",
 		hashtag: "#howl7rounds",
 		players: ['deezik', 'bulhkin', 'klaud', 'axle', 'bat'],
@@ -39,7 +39,7 @@ export const teams = [
 	},
 	{
 		teamTag: "csgoromcyk",
-		name: "CSGO Romčyk",
+		name: "Romčyk",
 		country: "by",
 		hashtag: "#Romčyk4Life",
 		players: ['rabcau', 'bulhkin', 'klaud', 'godeach'],

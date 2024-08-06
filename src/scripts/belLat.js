@@ -1,8 +1,28 @@
-import map from './map';
+const lowerMap = [
+    [/аi/g, "aj"], [/эi/g, "ej"], [/оi/g, "oj"], [/уi/g, "uj"], [/ыi/g, "yj"],
+    [/а/g, "a"], [/б/g, "b"], [/в/g, "v"], [/г/g, "h"], [/ґ/g, "g"], [/д/g, "d"], [/ж/g, "ž"], [/зь/g, "ź"],
+    [/з/g, "z"], [/й/g, "j"], [/к/g, "k"], [/ль/g, "l"], [/л/g, "ł"], [/м/g, "m"], [/нь/g, "ń"],
+    [/н/g, "n"], [/о/g, "o"], [/п/g, "p"], [/р/g, "r"], [/сь/g, "ś"], [/с/g, "s"], [/т/g, "t"], [/у/g, "u"],
+    [/ў/g, "ŭ"], [/ф/g, "f"], [/х/g, "ch"], [/ць/g, "ć"], [/ц/g, "c"], [/ч/g, "č"], [/ш/g, "š"], [/ы/g, "y"],
+    [/ь/g, ""], [/э/g, "e"],
+    [/lя/g, "la"], [/lе/g, "le"], [/lё/g, "lo"], [/lю/g, "lu"], [/lі/g, "li"],
+    [/łя/g, "la"], [/łе/g, "le"], [/łё/g, "lo"], [/łю/g, "lu"], [/łі/g, "li"],
+];
+
+const upperMap = lowerMap.flatMap(([regex, replacement]) => {
+    const cyrillic = regex.source.replace(/^\//, '').replace(/\/g$/, '');
+    if (cyrillic.length === 1) {
+        return [[new RegExp(cyrillic.toUpperCase(), 'g'), replacement.toUpperCase()]];
+    }
+    const [first, second] = cyrillic;
+    return [[new RegExp(`${first.toUpperCase()}(${second.toUpperCase()}|${second})`, 'g'), replacement[0].toUpperCase() + replacement.slice(1)]];
+});
+
+const map = [...upperMap, ...lowerMap];
 
 const isVowel = (char) => 'aeiouyAEIOUY'.includes(char);
 
-const convert = (text) => {
+const belToLat = (text) => {
     map.forEach(char => {
         text = text.replace(char[0], char[1]);
     });
@@ -29,4 +49,4 @@ const convert = (text) => {
     return result;
 };
 
-export default convert;
+export default belToLat;

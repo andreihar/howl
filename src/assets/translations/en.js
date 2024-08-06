@@ -9,7 +9,9 @@ export const en = {
 			teams: "Teams",
 			about: "About club",
 			partners: "Partners",
-			shop: "Shop"
+			shop: "Shop",
+			cyrillic: "Cyr",
+			latin: "Lat"
 		},
 		footer: {
 			about: "About us",
@@ -110,7 +112,7 @@ export const en = {
 					<span class="section__subtitle">HOWL Gaming CS:GO August 2017 Lineup:</span>
 					<br><1></1> Batyr <strong>«Klaud»</strong> Kussain<br><2></2> Tikhon <strong>«GODEACH»</strong> Ogniev<br><2></2> Naran <strong>«DeeZiK»</strong> Manjiev<br><0></0> Andrei <strong>«Bulhkin»</strong> Harbachov<br><2></2> Ilya <strong>«SpirTi»</strong> Avdoshkin
 				</p>
-				<p>Due to bad results, <0></0> <strong>«Bulhkin»</strong> and <2></2> <strong>«GODEACH»</strong> were removed from the main team at the end of February 2018. They are replaced by a member of the Ukrainian teams <4></4> <strong>Phantom</strong> <4></4> Bodhan <strong>«Young»</strong> Novykov and former CS:GO player from <2></2> <strong>RHB</strong> <2></2> Daniil <strong>«Nosferatu»</strong> Bykov, whose place in 5 days will be taken by Yegor <strong>«SeramisV»</strong> Lavrentiev. On the same day <4></4> Volodymyr <strong>«batmessiah»</strong> Sokolyuk joins the organisation as a team manager.</p><p>February 12 <2></2> Ilya <strong>«SpirTi»</strong> Avdoshkin and <2></2> <strong>«SeramisV»</strong> leave the team, however, in March, the Ruz player returns to the team, and <2></2> Ivan <strong>«Konung»</strong> Filipov takes the vacant place.</p><p>On April 6, the team takes part in rMatrixCUP#21, and 8 days after a bad performance on it, <1></1> <strong>«Klaud»</strong> announces his departure from the team, thus the rest of the players go inactive.</p>
+				<p>Due to bad results, <0></0> <strong>«Bulhkin»</strong> and <2></2> <strong>«GODEACH»</strong> were removed from the main team at the end of February 2018. They are replaced by a member of the Ukrainian teams <4></4> <strong>Phantom</strong> <4></4> Bohdan <strong>«Young»</strong> Novykov and former CS:GO player from <2></2> <strong>RHB</strong> <2></2> Daniil <strong>«Nosferatu»</strong> Bykov, whose place in 5 days will be taken by <2></2> Yegor <strong>«SeramisV»</strong> Lavrentiev. On the same day <4></4> Volodymyr <strong>«batmessiah»</strong> Sokolyuk joins the organisation as a team manager.</p><p>February 12 <2></2> Ilya <strong>«SpirTi»</strong> Avdoshkin and <2></2> <strong>«SeramisV»</strong> leave the team, however, in March, the Ruz player returns to the team, and <2></2> Ivan <strong>«Konung»</strong> Filipov takes the vacant place.</p><p>On April 6, the team takes part in rMatrixCUP#21, and 8 days after a bad performance on it, <1></1> <strong>«Klaud»</strong> announces his departure from the team, thus the rest of the players go inactive.</p>
 			</div>`,
 			csgoromcyk: `<h2 class="section__title h4"><strong>Team Belarus</strong></h2>
 			<div class="desc">

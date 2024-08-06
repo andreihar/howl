@@ -9,7 +9,9 @@ export const be = {
 			teams: "Каманды",
 			about: "Пра клюб",
 			partners: "Партнэры",
-			shop: "Крама"
+			shop: "Крама",
+			cyrillic: "Кір",
+			latin: "Лац"
 		},
 		footer: {
 			about: "Пра нас",

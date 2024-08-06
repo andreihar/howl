@@ -11,8 +11,8 @@ function Navbar() {
 	const { t } = i18n;
 	const [currentLanguage, setCurrentLanguage] = useState(i18n.language);
 	const languages = ['en', 'be', 'kk'];
-	const otherLanguages = languages.filter(lng => lng !== currentLanguage && !(currentLanguage === 'be-Latn' && lng === 'be'));
-	const languageFlags = { en: uk, be: by, 'be-Latn': by, kk: kz };
+	const otherLanguages = languages.filter(lng => lng !== currentLanguage && !(currentLanguage === 'be-Lat' && lng === 'be') && !(currentLanguage === 'kk-Cyr' && lng === 'kk'));
+	const languageFlags = { en: uk, be: by, 'be-Lat': by, kk: kz, 'kk-Cyr': kz };
 
 	const headerRef = useRef(null);
 
@@ -22,17 +22,23 @@ function Navbar() {
 	};
 
 	const changeMode = (mode) => {
-		if (mode === 'Кір') {
-			i18n.changeLanguage('be');
-		} else if (mode === 'Lac') {
-			i18n.changeLanguage('be-Latn');
+		const newLanguage = {
+			'kk': { 'cyrillic': 'kk-Cyr' },
+			'kk-Cyr': { 'latin': 'kk' },
+			'be': { 'latin': 'be-Lat' },
+			'be-Lat': { 'cyrillic': 'be' }
+		}[i18n.language]?.[mode];
+		if (newLanguage) {
+			i18n.changeLanguage(newLanguage);
 		}
 	};
 
 	useEffect(() => {
 		const handleLanguageChange = (lng) => {
-			if (lng === 'be-Latn') {
+			if (lng === 'be-Lat') {
 				setCurrentLanguage('be');
+			} else if (lng === 'kk-Cyr') {
+				setCurrentLanguage('kk');
 			} else {
 				setCurrentLanguage(lng);
 			}
@@ -46,7 +52,7 @@ function Navbar() {
 	useEffect(() => {
 		const handleScroll = () => {
 			const sticky = headerRef.current.offsetTop;
-			if (window.pageYOffset > sticky) {
+			if (window.scrollY > sticky) {
 				headerRef.current.classList.add("sticky");
 			} else {
 				headerRef.current.classList.remove("sticky");
@@ -99,7 +105,6 @@ function Navbar() {
 			<header id="header" ref={headerRef}>
 				<div className="container">
 					<div className="top">
-						{/* <Link to="/" className="top-logo" title="HOWL Gaming"></Link> */}
 						<Link to="/" className="top-logo" title="HOWL Gaming">
 							<img src={logo} alt="HOWL Gaming Logo" width="100%" height="100%" style={{ objectFit: 'cover' }} className="logo-img" />
 						</Link>
@@ -144,7 +149,7 @@ function Navbar() {
 								<li className="lang">
 									<button style={{ display: 'flex', alignItems: 'center', background: 'none', border: 'none', cursor: 'pointer', padding: 0 }}>
 										<img className="flag" src={languageFlags[currentLanguage]} style={{ marginRight: '4px' }} alt={`Flag representing language ${currentLanguage}`} loading="lazy" />
-										{currentLanguage === 'be-Latn' ? 'be' : currentLanguage}
+										{currentLanguage === 'be-Lat' ? 'be' : currentLanguage === 'kk-Cyr' ? 'kk' : currentLanguage}
 									</button>
 									<ul>
 										{otherLanguages.map((lng) => (
@@ -157,11 +162,11 @@ function Navbar() {
 										))}
 									</ul>
 								</li>
-								{i18n.language.startsWith('be') && (
+								{(i18n.language.startsWith('be') || i18n.language.startsWith('kk')) && (
 									<li style={{ display: 'flex' }}>
-										<a onClick={() => changeMode('Кір')} style={{ cursor: 'pointer' }}>Кір</a>
+										<a onClick={() => changeMode('cyrillic')} style={{ cursor: 'pointer' }}>{t('navbar.cyrillic')}</a>
 										<span style={{ color: 'white' }}>|</span>
-										<a onClick={() => changeMode('Lac')} style={{ cursor: 'pointer' }}>Lac</a>
+										<a onClick={() => changeMode('latin')} style={{ cursor: 'pointer' }}>{t('navbar.latin')}</a>
 									</li>
 								)}
 							</ul>

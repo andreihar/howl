@@ -76,7 +76,7 @@ function Team() {
 							<div className="team-name" style={{ width: 510 }}>
 								<img src={flagImages[country]} className="team-game-flag" alt={country} />
 								<div className="team-header">
-									<p className="team-tag" lang='en'>{name}</p>
+									<p className="team-tag" lang='en'>HOWL Gaming {name}</p>
 									<br />
 									<span className="team-hashtag">{hashtag}</span>
 								</div>
