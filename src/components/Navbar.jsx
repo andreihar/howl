@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import i18n from "../scripts/i18n";
 
 import logo from '../assets/img/logos/logo.png';
@@ -105,38 +105,26 @@ function Navbar() {
 			<header id="header" ref={headerRef}>
 				<div className="container">
 					<div className="top">
-						<Link to="/" className="top-logo" title="HOWL Gaming">
+						<NavLink to="/" className="top-logo" title="HOWL Gaming">
 							<img src={logo} alt="HOWL Gaming Logo" width="100%" height="100%" style={{ objectFit: 'cover' }} className="logo-img" />
-						</Link>
+						</NavLink>
 						<nav className="top-nav">
 							<ul className="main-menu">
-								<li><Link to={`/news`}>{t('navbar.news')}</Link></li>
+								<li><NavLink to="/news" activeClassName="active">{t('navbar.news')}</NavLink></li>
 								<li>
 									<a href="#">{t('navbar.media')}</a>
 									<ul>
-										<li>
-											<a href="#">{t('navbar.streams')}</a>
-										</li>
-										<li>
-											<a href="#">{t('navbar.video')}</a>
-										</li>
-										<li>
-											<a href="#">{t('navbar.gallery')}</a>
-										</li>
+										<li><a href="#">{t('navbar.streams')}</a></li>
+										<li><a href="#">{t('navbar.video')}</a></li>
+										<li><a href="#">{t('navbar.gallery')}</a></li>
 									</ul>
 								</li>
 								<li>
-									<Link to={`/teams`}>{t('navbar.teams')}</Link>
+									<NavLink to="/teams" activeClassName="active">{t('navbar.teams')}</NavLink>
 									<ul>
-										<li>
-											<Link to={`/team/csgo`}>CS:GO</Link>
-										</li>
-										<li>
-											<Link to={`/team/osu`}>Osu!</Link>
-										</li>
-										<li>
-											<Link to={`/team/csgoromcyk`}>Romčyk</Link>
-										</li>
+										<li><NavLink to="/team/csgo" activeClassName="active">CS:GO</NavLink></li>
+										<li><NavLink to="/team/osu" activeClassName="active">Osu!</NavLink></li>
+										<li><NavLink to="/team/csgoromcyk" activeClassName="active">Romčyk</NavLink></li>
 									</ul>
 								</li>
 								<li><a href="#">{t('navbar.about')}</a></li>
@@ -164,9 +152,14 @@ function Navbar() {
 								</li>
 								{(i18n.language.startsWith('be') || i18n.language.startsWith('kk')) && (
 									<li style={{ display: 'flex' }}>
-										<a onClick={() => changeMode('cyrillic')} style={{ cursor: 'pointer' }}>{t('navbar.cyrillic')}</a>
-										<span style={{ color: 'white' }}>|</span>
-										<a onClick={() => changeMode('latin')} style={{ cursor: 'pointer' }}>{t('navbar.latin')}</a>
+										{(() => {
+											const elements = [
+												<a key="cyrillic" onClick={() => changeMode('cyrillic')} style={{ cursor: 'pointer' }}>{t('navbar.cyrillic')}</a>,
+												<span key="separator" style={{ color: 'white' }}>|</span>,
+												<a key="latin" onClick={() => changeMode('latin')} style={{ cursor: 'pointer' }}>{t('navbar.latin')}</a>
+											];
+											return i18n.language.startsWith('be') ? elements : elements.reverse();
+										})()}
 									</li>
 								)}
 							</ul>
