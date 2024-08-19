@@ -7,11 +7,21 @@ import { kk } from '../assets/translations/kk.js';
 import belToLat from './belLat.js';
 import kazToLat from './kazLat.js';
 
+const extractTranslation = (value, language) => {
+	return value.replace(/{([^|]+)\|([^}]+)}/g, (_latin, latin, cyrillic) => {
+		if (language === 'be-Lat' || language === 'kk') {
+			return latin;
+		}
+		return cyrillic;
+	});
+};
+
 i18n
 	.use({
 		type: 'postProcessor',
 		name: 'lacinkaPostProcessor',
 		process: function (value, _key, _options, translator) {
+			value = extractTranslation(value, translator.language);
 			if (translator.language === 'be-Lat') {
 				return belToLat(value);
 			}
