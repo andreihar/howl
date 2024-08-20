@@ -180,7 +180,7 @@ The Setup section provides detailed information about the player's devices, cros
 
 ### Localisation
 
-Users can switch between English, Belarusian, and Kazakh languages by selecting the desired option from the language selector drop-down menu in the Navbar. Belarusian and Kazakh have an additional option of switching between Cyrillic and Latin alphabets.
+Users can switch between English, Belarusian, and Kazakh languages by selecting the desired option from the language selector drop-down menu in the Navbar. Belarusian and Kazakh have an additional option of switching between Cyrillic and Latin alphabets. Foreign words and proper names are rendered differently based on the selected script, with phonetic transcription in Cyrillic to reflect pronunciation, and original spelling retained in Latin.
 
 <p align="center">
 <img src="readme/be-cyr.jpg" alt="Belarusian Cyrillic" height="300">
