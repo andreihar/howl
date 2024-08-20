@@ -153,7 +153,7 @@ function Player() {
 							<div className="desc desc-highlights">
 								<div className="video-small">
 									{highlights.map((highlight, index) => (
-										<iframe src={highlight} key={index} />
+										<iframe src={highlight} key={index} allow="fullscreen" allowFullScreen />
 									))}
 								</div>
 							</div>
