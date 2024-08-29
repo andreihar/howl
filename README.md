@@ -107,7 +107,7 @@ The website can be accessed through the URL `http://localhost:5173/`.
 The Home Page serves as the central hub, directing visitors to the pages of the three teams.
 
 <p align="center">
-<img src="readme/home.jpg" alt="Home" height="300">
+<img src="readme/home.jpg" alt="Home" width="550">
 </p>
 
 ### News
@@ -115,11 +115,11 @@ The Home Page serves as the central hub, directing visitors to the pages of the 
 The News Page provides an overview of a tournament and detailed descriptions of each match, including scores.
 
 <p align="center">
-<img src="readme/news.jpg" alt="News" height="300">
+<img src="readme/news.jpg" alt="News" width="550">
 </p>
 
 <p align="center">
-<img src="readme/news_match.jpg" alt="Match" height="300">
+<img src="readme/news_match.jpg" alt="Match" width="550">
 </p>
 
 ### Teams
@@ -127,7 +127,7 @@ The News Page provides an overview of a tournament and detailed descriptions of 
 This Teams Page describes the three teams in the organisation, providing links to the team pages and the profiles of the players.
 
 <p align="center">
-<img src="readme/teams.jpg" alt="Teams" height="300">
+<img src="readme/teams.jpg" alt="Teams" width="550">
 </p>
 
 ### Team
@@ -135,7 +135,7 @@ This Teams Page describes the three teams in the organisation, providing links t
 The Team Page provides comprehensive insights into each team, including player details, coaching staff, overall team information, global statistics, match records, achievements, and team history. To ensure efficient content management and prevent duplication, all team-related data is consolidated within a central file `teams.js`. This data is dynamically retrieved and presented on the corresponding team pages, ensuring consistency and ease of updates.
 
 <p align="center">
-<img src="readme/team.jpg" alt="Team" height="300">
+<img src="readme/team.jpg" alt="Team" width="550">
 </p>
 
 #### Matches
@@ -143,7 +143,7 @@ The Team Page provides comprehensive insights into each team, including player d
 The recent and upcoming matches of the team are displayed in convenient container, providing additional information about the tournaments and scores.
 
 <p align="center">
-<img src="readme/matches.jpg" alt="Matches" height="300">
+<img src="readme/matches.jpg" alt="Matches" width="550">
 </p>
 
 #### Achievements
@@ -151,7 +151,7 @@ The recent and upcoming matches of the team are displayed in convenient containe
 The Achievements section displays the significant trophies of the team in various tournaments and competitions.
 
 <p align="center">
-<img src="readme/achievements.jpg" alt="Achievements" height="300">
+<img src="readme/achievements.jpg" alt="Achievements" width="550">
 </p>
 
 #### History
@@ -159,7 +159,7 @@ The Achievements section displays the significant trophies of the team in variou
 The History section provides a detailed overview of the team's journey, milestones, and significant events, allowing fans to trace the evolution and growth of the team over time.
 
 <p align="center">
-<img src="readme/history.jpg" alt="History" height="300">
+<img src="readme/history.jpg" alt="History" width="550">
 </p>
 
 ### Player
@@ -167,7 +167,7 @@ The History section provides a detailed overview of the team's journey, mileston
 The Player Page offers detailed insights into the player's history, setup, and achievements, which are aggregated from all the teams the player is affiliated with. To ensure efficient content management and prevent duplication, all player-related data is consolidated within a central file `players.js`. This data is dynamically retrieved and presented on the corresponding player pages, ensuring consistency and ease of updates.
 
 <p align="center">
-<img src="readme/player.jpg" alt="Player" height="300">
+<img src="readme/player.jpg" alt="Player" width="550">
 </p>
 
 #### Setup
@@ -175,7 +175,7 @@ The Player Page offers detailed insights into the player's history, setup, and a
 The Setup section provides detailed information about the player's devices, crosshair settings, video configurations, and mouse settings. It also allows to download player's config file.
 
 <p align="center">
-<img src="readme/setup.jpg" alt="Setup" height="300">
+<img src="readme/setup.jpg" alt="Setup" width="550">
 </p>
 
 ### Localisation
@@ -183,12 +183,12 @@ The Setup section provides detailed information about the player's devices, cros
 Users can switch between English, Belarusian, and Kazakh languages by selecting the desired option from the language selector drop-down menu in the Navbar. Belarusian and Kazakh have an additional option of switching between Cyrillic and Latin alphabets. Foreign words and proper names are rendered differently based on the selected script, with phonetic transcription in Cyrillic to reflect pronunciation, and original spelling retained in Latin.
 
 <p align="center">
-<img src="readme/be-cyr.jpg" alt="Belarusian Cyrillic" height="300">
-<img src="readme/be-lat.jpg" alt="Belarusian Latin" height="300">
+<img src="readme/be-cyr.jpg" alt="Belarusian Cyrillic" width="550">
+<img src="readme/be-lat.jpg" alt="Belarusian Latin" width="550">
 </p>
 <p align="center">
-<img src="readme/kk-lat.jpg" alt="Kazakh Latin" height="300">
-<img src="readme/kk-cyr.jpg" alt="Kazakh Cyrillic" height="300">
+<img src="readme/kk-lat.jpg" alt="Kazakh Latin" width="550">
+<img src="readme/kk-cyr.jpg" alt="Kazakh Cyrillic" width="550">
 </p>
 
 
@@ -197,7 +197,7 @@ Users can switch between English, Belarusian, and Kazakh languages by selecting 
 ## Lighthouse Report
 
 <p align="center">
-<img src="readme/audit.jpg" alt="Audit" height="150">
+<img src="readme/audit.jpg" alt="Audit" width="500">
 </p>
 
 
