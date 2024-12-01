@@ -1,51 +1,57 @@
-const lowerMap = [
-    [/аi/g, "aj"], [/эi/g, "ej"], [/оi/g, "oj"], [/уi/g, "uj"], [/ыi/g, "yj"],
-    [/а/g, "a"], [/б/g, "b"], [/в/g, "v"], [/г/g, "h"], [/ґ/g, "g"], [/д/g, "d"], [/ж/g, "ž"], [/зь/g, "ź"],
-    [/з/g, "z"], [/й/g, "j"], [/к/g, "k"], [/ль/g, "l"], [/л/g, "ł"], [/м/g, "m"], [/нь/g, "ń"],
-    [/н/g, "n"], [/о/g, "o"], [/п/g, "p"], [/р/g, "r"], [/сь/g, "ś"], [/с/g, "s"], [/т/g, "t"], [/у/g, "u"],
-    [/ў/g, "ŭ"], [/ф/g, "f"], [/х/g, "ch"], [/ць/g, "ć"], [/ц/g, "c"], [/ч/g, "č"], [/ш/g, "š"], [/ы/g, "y"],
-    [/ь/g, ""], [/э/g, "e"],
-    [/lя/g, "la"], [/lе/g, "le"], [/lё/g, "lo"], [/lю/g, "lu"], [/lі/g, "li"],
-    [/łя/g, "la"], [/łе/g, "le"], [/łё/g, "lo"], [/łю/g, "lu"], [/łі/g, "li"],
-];
+const vowelString = (lower) => {
+    return lower + lower.toUpperCase();
+};
+const isVowel = (char) => vowelString('aeiouy').includes(char);
+const capFirst = (obj) => {
+    for (const [key, value] of Object.entries(obj))
+        obj[key.charAt(0).toUpperCase() + key.slice(1)] = value.charAt(0).toUpperCase() + value.slice(1);
+    return obj;
+};
+const capAll = (obj) => {
+    for (const [key, value] of Object.entries(obj))
+        obj[key.toUpperCase()] = value.toUpperCase();
+    return obj;
+};
+const replacement = (text, replacements) => {
+    return Object.entries(replacements).reduce((acc, [key, value]) => acc.split(key).join(value), text);
+};
 
-const upperMap = lowerMap.flatMap(([regex, replacement]) => {
-    const cyrillic = regex.source.replace(/^\//, '').replace(/\/g$/, '');
-    if (cyrillic.length === 1) {
-        return [[new RegExp(cyrillic.toUpperCase(), 'g'), replacement.toUpperCase()]];
-    }
-    const [first, second] = cyrillic;
-    return [[new RegExp(`${first.toUpperCase()}(${second.toUpperCase()}|${second})`, 'g'), replacement[0].toUpperCase() + replacement.slice(1)]];
-});
-
-const map = [...upperMap, ...lowerMap];
-
-const isVowel = (char) => 'aeiouyAEIOUY'.includes(char);
+const lowerMap = {
+    'а': 'a', 'б': 'b', 'в': 'v', 'г': 'h', 'ґ': 'g', 'д': 'd', 'ж': 'ž', 'зь': 'ź',
+    'з': 'z', 'й': 'j', 'к': 'k', 'ль': 'l', 'л': 'ł', 'м': 'm', 'нь': 'ń',
+    'н': 'n', 'о': 'o', 'п': 'p', 'р': 'r', 'сь': 'ś', 'с': 's', 'т': 't', 'у': 'u',
+    'ў': 'ŭ', 'ф': 'f', 'х': 'ch', 'ць': 'ć', 'ц': 'c', 'ч': 'č', 'ш': 'š', 'ы': 'y',
+    'ь': '', 'э': 'e', 'lя': 'la', 'lе': 'le', 'lё': 'lo', 'lю': 'lu', 'lі': 'li',
+    'łя': 'la', 'łе': 'le', 'łё': 'lo', 'łю': 'lu', 'łі': 'li'
+};
+const map = { ...capFirst(lowerMap), ...capAll(lowerMap), ...lowerMap };
 
 const belToLat = (text) => {
-    map.forEach(char => {
-        text = text.replace(char[0], char[1]);
-    });
-
+    text = replacement(text, map);
     let result = '';
     for (let i = 0; i < text.length; i++) {
         let char = text[i];
-        if ('еёюяЕЁЮЯ'.includes(char)) {
+        if (vowelString('еёюя').includes(char)) {
             if (i === 0 || text[i - 1] === ' ' || (result.length > 0 && isVowel(result.slice(-1)))) {
-                char = char.replace('е', 'je').replace('ё', 'jo').replace('ю', 'ju').replace('я', 'ja').replace('Е', 'Je').replace('Ё', 'Jo').replace('Ю', 'Ju').replace('Я', 'Ja');
+                const js = { 'е': 'je', 'ё': 'jo', 'ю': 'ju', 'я': 'ja' };
+                char = replacement(char, { ...js, ...capFirst(js) });
             } else {
-                char = char.replace('е', 'ie').replace('ё', 'io').replace('ю', 'iu').replace('я', 'ia').replace('Е', 'IE').replace('Ё', 'IO').replace('Ю', 'IU').replace('Я', 'IA');
+                const is = { 'е': 'ie', 'ё': 'io', 'ю': 'iu', 'я': 'ia' };
+                char = replacement(char, { ...is, ...capAll(is) });
             }
         } else if ('іІ'.includes(char)) {
             if (i !== 0 && (result.length > 0 && isVowel(result.slice(-1)))) {
-                char = char.replace('і', 'ji').replace('І', 'Ji');
+                let i = { 'і': 'ji' };
+                char = replacement(char, { ...i, ...capFirst(i) });
             } else {
-                char = char.replace('і', 'i').replace('І', 'I');
+                let i = { 'і': 'i' };
+                char = replacement(char, { ...i, ...capFirst(i) });
             }
         }
         result += char;
     }
-    result = result.replace('’i', 'j').replace('’І', 'J').replace('ći', 'ćj').replace('Ći', 'Ćj').replace('ĆI', 'ĆJ').replace('śi', 'śj').replace('Śi', 'Śj').replace('ŚI', 'ŚJ').replace('ńi', 'nj').replace('Ńi', 'Ńj').replace('ŃI', 'ŃJ').replace('źi', 'źj').replace('Źi', 'Źj').replace('ŹI', 'ŹJ');
+    const soft = { '’i': 'j', 'ći': 'ćj', 'śi': 'śj', 'ńi': 'nj', 'źi': 'źj' };
+    result = replacement(result, { ...capFirst(soft), ...capAll(soft), ...soft });
     return result;
 };
 

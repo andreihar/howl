@@ -25,9 +25,6 @@ i18n
 			if (translator.language === 'be-Lat') {
 				return belToLat(value);
 			}
-			if (translator.language === 'kk-Cyr') {
-				return value;
-			}
 			if (translator.language === 'kk') {
 				return kazToLat(value);
 			}
