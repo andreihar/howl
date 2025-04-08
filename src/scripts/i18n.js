@@ -1,7 +1,7 @@
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
-import { en } from '../assets/translations/en.js';
 import { be } from '../assets/translations/be.js';
+import { en } from '../assets/translations/en.js';
 import { kk } from '../assets/translations/kk.js';
 
 import belToLat from './belLat.js';
@@ -28,7 +28,7 @@ i18n
 			if (translator.language === 'kk') {
 				return kazToLat(value);
 			}
-			return value.replace('́', '');
+			return value.replace(/\u0301/g, "");
 		}
 	})
 	.use(initReactI18next)
