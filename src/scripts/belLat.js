@@ -50,7 +50,7 @@ const belToLat = (text) => {
         }
         result += char;
     }
-    const soft = { '’i': 'j', 'ći': 'ćj', 'śi': 'śj', 'ńi': 'nj', 'źi': 'źj' };
+    const soft = { '’i': 'j', 'ći': 'ćj', 'śi': 'śj', 'ńi': 'nj', 'źi': 'źj', 'í': 'ji' };
     result = replacement(result, { ...capFirst(soft), ...capAll(soft), ...soft });
     return result;
 };

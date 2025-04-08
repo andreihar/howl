@@ -28,7 +28,7 @@ i18n
 			if (translator.language === 'kk') {
 				return kazToLat(value);
 			}
-			return value;
+			return value.replace('́', '');
 		}
 	})
 	.use(initReactI18next)
